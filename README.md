@@ -40,11 +40,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.hellofresh.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Homepage 
+  Homepage
+   
   <img src="readme-images/foto-website1.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Samenduurzaam 
+  Samenduurzaam
+
   <img src="readme-images/foto-website2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>

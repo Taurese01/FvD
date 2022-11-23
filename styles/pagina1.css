@@ -1,0 +1,244 @@
+
+/* alle kleuren naar die root veranderen en alle pixels in EM veranderen! */
+
+
+
+
+section:nth-of-type(1){
+    background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg");
+    min-height: 410px; /* bah px */
+    /* padding-bottom: 20px; */
+    /* padding-top: 20px; */
+    padding:1.125em;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* width: 100%; */
+    /* display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    display:grid;
+    place-content: center;
+    place-items: center;
+    /* sanne vindt grid ok  - flex trouwens ook */
+    text-align: center;
+}
+
+section:nth-of-type(1) a{
+    font-weight: 400px;
+    font-size: 16px;
+    border-radius: 3px;
+    font-family: Agrandir,sans-serif;
+    color: #FFFFFF; /* veranderen naar die root ding  */
+    background-color: #067A46;   /* veranderen naar die root ding  */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 36px;
+}
+
+section:nth-of-type(1) p {
+    color: inherit;
+    font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+
+section:nth-of-type(2) {
+padding-top: 20px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; 
+padding-bottom: 20px ;
+}
+
+
+section:nth-of-type(5) {
+display: flex;
+flex-direction: column;
+}
+
+section:nth-of-type(5) img {
+width: 324px;
+height: 405px;
+}
+
+
+
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  :root {
+      --maxWidth:32rem;
+  }
+  
+  body {
+      grid-template-columns: minmax(auto, var(--maxWidth));
+      justify-content:center;
+  }
+  
+    
+  /******************************/
+  /* DE CAROCARROUSEL CONTAINER */
+  /******************************/
+  
+  .caroCarrousel {
+      /* basis waarden die door de hele carrousel gebruikt worden */
+      /* kun je zelf aanpassen */
+      --caroCarrouselMainColor:#333;
+    --caroCarrouselAccentColor:#1b75b3;
+      --caroCarrouselShadeColor:#ddd9;
+  
+    position: relative;
+      outline:none;
+      padding-bottom: 1em;
+  }
+  
+  /* dark mode */
+  @media (prefers-color-scheme: dark) {
+    .caroCarrousel {
+      --caroCarrouselMainColor:#ccc;
+      --caroCarrouselShadeColor:#4449;
+    }
+  }
+  
+  
+  /************************************/
+  /* de carrousel elementen container */
+  .caroCarrousel > ul {
+    margin: 0; padding: 0;
+    list-style: none;
+      display: flex;
+      
+      /* handmatig scrollen is mogelijk */
+      overflow: hidden;
+      
+      /* snappen als er gescrolled wordt - andere helft bij li */
+    scroll-snap-type: inline mandatory;
+    
+    /* smooth als met js gescrolled wordt */
+      scroll-behavior: smooth;
+    
+    /* scrollbar zoveel mogelijk verbergen */
+    -webkit-overflow-scrolling: touch; /* voor iOS*/
+    -ms-overflow-style: none; /* voor IE */
+      scrollbar-width: none; /* voor firefox */
+  }
+  
+  .caroCarrousel > ul::-webkit-scrollbar {
+    /* scrollbar zoveel mogelijk verbergen */
+    display: none; /* voor chrome, safari en edge*/
+  }
+  
+  
+  /**************************/
+  /* de carrousel elementen */
+  .caroCarrousel > ul li {
+    flex-basis: 100%;
+    flex-shrink: 0;
+    /* snappen als er gescrolled wordt - andere helft bij ul */
+      scroll-snap-align:center;
+  }
+  
+  
+  /**********************************/
+  /* de carrousel elementen content */
+  
+  /* de stijlen voor jouw content hier */
+  .caroCarrousel > ul li > img {
+    display: block;
+    width: 324px;
+    height: 405px;
+    max-width: 100%;
+    object-fit: cover;
+    margin: auto;
+  }
+  
+  .caroCarrousel > ul li > p {
+    font-weight: 400;
+    line-height: 20px;
+    color: #242424;
+    font-size: 14px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    padding: 0 30px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+}
+
+  .caroCarrousel > ul li > h4 {
+    font-family: Agrandir,sans-serif;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: #242424;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  /****************/
+  /* DE BOLLETJES */
+  /****************/
+  
+  /* de bolletjes container */
+  .caroCarrousel nav ul {
+    position: absolute;
+      left: 2em; right: 2em;
+      margin: 0;
+    padding: 0 0 .5em;
+    list-style: none;
+      
+      display: flex;
+  /* 	flex-wrap:wrap; */
+    justify-content: center;
+    gap:.4em;
+  }
+  
+  /* een bolletje container */
+  .caroCarrousel > nav li {
+      flex-basis: 1.2em;
+      aspect-ratio: 1/1;
+  }
+  
+  /* de bolletjes */
+  .caroCarrousel > nav a {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    border: 0;
+    background-color: #FFFFFF;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #067A46;
+  }
+  
+  .caroCarrousel > nav a:hover,
+  .caroCarrousel > nav a:focus {
+    color: var(--caroCarrouselAccentColor);
+  }
+  
+  .caroCarrousel > nav a.current {
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50%;
+    border: 0;
+    background-color: #067A46;
+    width: 10px;
+    height: 10px;
+    background-color: #067A46;
+    border: 1px solid #067A46;
+  }
