@@ -145,23 +145,22 @@ child gebruiken. Bijv. als ik	...	...	...
 de 1e section een background-	...	...	...
 image wil geven. Wat moet ik	...	...	...
 dan doen? (zelfde met links)
+  
+  De agenda bewerken gaat erg lastig dus ik zet alle dingen hier neer:
+  
+  Taurese:  Ik weet niet hoe ik een list item laten veranderen op een timer die loopt. 
+  Brianne:  Ik kan niet altijd :nth-of-child gebruiken. Bijv. als ik de 1e section een background-image wil geven. Wat moet ik dan doen? (zelfde met       
+  links).
+  Lars: Hoe kan ik het beste beginnen met CSS.
 
-
-   Ik weet niet hoe
-   ik een list item 
-   laten veranderen op
-   een timer die loopt. 
 
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  hier na afloop snel de uitkomsten van de meeting vastleggen:
+  
+Ik heb van de student assistentes een mogelijke oplossing meegekregen voor mijn probleem, ik zou dit kunnen fixen met CSS of met Autotype of TypeJS. Ik zal dit zo spoedig mogelijk toepassen binnen mijn site. Verder gaat het erg goed met mijn website en ben ik al redelijk ver opweg.
+  
 </details>
 
 
