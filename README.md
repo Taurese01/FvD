@@ -183,6 +183,12 @@ Ik heb van de student assistentes een mogelijke oplossing meegekregen voor mijn 
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+  
+  De agenda bewerken gaat erg lastig dus ik zet alle dingen hier neer:
+  
+  Taurese: Ik weet niet hoe ik meerdere dropdown UL's kan maken binnen een footer. 
+  
+  
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
