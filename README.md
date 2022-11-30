@@ -138,19 +138,17 @@ Verder is met een visuele beperking de website nog redelijk goed te gebruiken, d
   | een timer die  | dit als er tijd is | het beste be |                  |
   | ginnen met cs  | ...                | ginnen met-css|                 |
   
-  
-  Brianne	student 2	student 3	student 4
-Ik kan niet altijd :nth-of-	...	...	...
-child gebruiken. Bijv. als ik	...	...	...
-de 1e section een background-	...	...	...
-image wil geven. Wat moet ik	...	...	...
-dan doen? (zelfde met links)
+ 
   
   De agenda bewerken gaat erg lastig dus ik zet alle dingen hier neer:
   
   Taurese:  Ik weet niet hoe ik een list item laten veranderen op een timer die loopt. 
+  
+  
   Brianne:  Ik kan niet altijd :nth-of-child gebruiken. Bijv. als ik de 1e section een background-image wil geven. Wat moet ik dan doen? (zelfde met       
   links).
+  
+  
   Lars: Hoe kan ik het beste beginnen met CSS.
 
 
