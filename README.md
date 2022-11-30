@@ -132,13 +132,21 @@ Verder is met een visuele beperking de website nog redelijk goed te gebruiken, d
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Taurese        | student 2          | student 3    | student 4        |
+  | Taurese        | Brianne            | Lars         | student 4        |
   | ---            | ---                | ---          | ---              |
-  | List item op   | en dit             | en ik dit    | en dan ik dat    |
-  | een timer die  | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | veranderd      | ...                | ...          | ...              |
+  | List item op   | en dit             | Hoe kan ik   | en dan ik dat    |
+  | een timer die  | dit als er tijd is | het beste be |                  |
+  | ginnen met cs  | ...                | ginnen met-css|                 |
   
   
+  Brianne	student 2	student 3	student 4
+Ik kan niet altijd :nth-of-	...	...	...
+child gebruiken. Bijv. als ik	...	...	...
+de 1e section een background-	...	...	...
+image wil geven. Wat moet ik	...	...	...
+dan doen? (zelfde met links)
+
+
    Ik weet niet hoe
    ik een list item 
    laten veranderen op

@@ -19,7 +19,7 @@
 
 
 	<header>
-		<nav>
+		<!-- <nav>
 			<img
 				src="https://img.hellofresh.com/image/upload/c_scale,f_auto,q_auto,w_230/v1600959926/Hello_Fresh_Lockup.png">
 			<ul>
@@ -36,24 +36,60 @@
 				<li>Duurzaamheid</li>
 				<li>CO2-neutraal</li>
 			</ul>
+		</nav> -->
+
+		<!-- het logo -->
+		<a href="#">
+			<img src="https://img.hellofresh.com/image/upload/c_scale,f_auto,q_auto,w_230/v1600959926/Hello_Fresh_Lockup.png"
+				alt="go home" />
+		</a>
+
+		<!-- de open button -->
+		<!-- de button is niet relevant voor screenreaders -->
+		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
+
+
+		<!--  het menu -->
+		<nav>
+			<!-- de sluit button -->
+			<!-- de button is ook niet relevant voor screenreaders -->
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
+
+			<ul>
+				<li><a href="#">Inloggen</a></li>
+				<li><a href="#">Onze boxen</a></li>
+				<li><a href="#">Zo werkt het</a></li>
+				<li><a href="#">Op het menu</a></li>
+				<li><a href="#">Recepten</a></li>
+
+				<li><a href="#">Hulp</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Markt</a></li>
+				<li><a href="#">Cadeaubon</a></li>
+				<li><a href="#">Duurzaamheid</a></li>
+				<li><a href="#">CO2-neutraal</a></li>
+			</ul>
 		</nav>
+
 	</header>
+
 
 	<main>
 
-		<h1>Hello Fresh</h1>
+		<!-- <h1>Hello Fresh</h1> -->
 
 		<section>
 			<!-- <img src="" alt=""> -->
-			<h2>Bespaar</h2>
+			<h1>Bespaar</h1>
 			<p>Kies elke week uit 35 recepten vanaf slechts € 4 per persoon</p>
 			<a>Bestel jouw box</a>
 		</section>
 
 		<section>
 			<h3>Een kijkje in de keuken</h3>
-			<p>Bekijk de HelloFresh-ervaringen van onze trouwe thuiskoks op Instagram! <img
-					src="https://hf-website-live.s3-eu-west-1.amazonaws.com/be/cms/landing_pages/icon-instagram.svg">
+			<p>Bekijk de HelloFresh-ervaringen van onze trouwe thuiskoks op Instagram!
+				<img src="https://hf-website-live.s3-eu-west-1.amazonaws.com/be/cms/landing_pages/icon-instagram.svg">
 			</p>
 		</section>
 
@@ -80,41 +116,47 @@
 		</section> -->
 
 		<section id="bolletjesAndSwipen" class="caroCarrousel" aria-label="Voorbeeld met bolletjes en swipen"
-		tabIndex="-1">
-		<!-- de id kun je zelf een naam geven en geef je mee in de js -->
-		<ul>
-			<li id="element1"><img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/life.of.zoe.the.frenchie.jpg"" alt="kittens" />
-				<p>Papa en mama hebben weer heerlijke maaltijden voor komende week! Wat wordt dat weer genieten! 😍
-				</p>
-			</li>
-
-			<li id="element2"><img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/livingbynathalie.jpg" alt="kittens" />
-				<h4>livingbynathalie</h4>
-				<p>Hello late lunch! 🥞</p>
-			</li>
-
-			<li id="element3"><img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/kokenmetpeper_edited.png" alt="kittens" />
-				<h4>kokenmetpeper</h4>
-				<p>Risotto met Kabeljauw.💚✨ Een heerlijk én simpel recept van HelloFresh!</p>
-			</li>
-
-			<li id="element4"><img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/riannekramer_edited.png" alt="kittens" />
-				<h4>riannekramer</h4>
-				<p>Dit is een recept dat ik bewaar om nog vaker te maken. Lekker en supersimpel om te maken!</p>
-			</li>
-
-
-		</ul>
-
-		<nav>
+			tabIndex="-1">
+			<!-- de id kun je zelf een naam geven en geef je mee in de js -->
 			<ul>
-				<li><a href="#element1" aria-label="go to element1"></a></li>
-				<li><a href="#element2" aria-label="go to element2"></a></li>
-				<li><a href="#element3" aria-label="go to element3"></a></li>
-				<li><a href="#element4" aria-label="go to element4"></a></li>
+				<li id="element1"><img
+						src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/life.of.zoe.the.frenchie.jpg"" alt="
+						kittens" />
+					<p>Papa en mama hebben weer heerlijke maaltijden voor komende week! Wat wordt dat weer genieten! 😍
+					</p>
+				</li>
+
+				<li id="element2"><img
+						src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/livingbynathalie.jpg"
+						alt="kittens" />
+					<h4>livingbynathalie</h4>
+					<p>Hello late lunch! 🥞</p>
+				</li>
+
+				<li id="element3"><img
+						src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/kokenmetpeper_edited.png"
+						alt="kittens" />
+					<h4>kokenmetpeper</h4>
+					<p>Risotto met Kabeljauw.💚✨ Een heerlijk én simpel recept van HelloFresh!</p>
+				</li>
+
+				<li id="element4"><img
+						src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/riannekramer_edited.png"
+						alt="kittens" />
+					<h4>riannekramer</h4>
+					<p>Dit is een recept dat ik bewaar om nog vaker te maken. Lekker en supersimpel om te maken!</p>
+				</li>
 			</ul>
-		</nav>
-	</section>
+
+			<nav>
+				<ul>
+					<li><a href="#element1" aria-label="go to element1"></a></li>
+					<li><a href="#element2" aria-label="go to element2"></a></li>
+					<li><a href="#element3" aria-label="go to element3"></a></li>
+					<li><a href="#element4" aria-label="go to element4"></a></li>
+				</ul>
+			</nav>
+		</section>
 
 
 		<section>
@@ -143,8 +185,8 @@
 			<h4>Kook met de beste ingrediënten</h4>
 			<p>Bereid in 4 tot 6 eenvoudige stappen een verse maaltijd.</p>
 
-			<button>Bestel jouw box</button>
-			<p>Je kunt de box elke week aanpassen, pauzeren of opzeggen.</p>
+			<a>Bestel jouw box</a>
+			<strong>Je kunt de box elke week aanpassen, pauzeren of opzeggen.</strong>
 
 		</section>
 
@@ -153,46 +195,91 @@
 		<section>
 			<h3>Jouw smaak, jouw box</h3>
 			<p>We hebben recepten en producten voor elk moment. Pas jouw box elke week aan naar jouw plannen.</p>
-
-
-			<!-- <section> -->
-
-			<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/busyweek.png"
-				alt="">
-			<h3>Voor drukke dagen</h3>
-			<p>snelle recepten in 20 minuten klaar</p>
-
-			<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/impressyourguest.png"
-				alt="">
-			<h3>Voor meer gemak</h3>
-			<p>een extra maaltijd of dubbele portie</p>
-
-			<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/deliciousextra.png"
-				alt="">
-			<h3>Voor een beetje meer</h3>
-			<p>de lekkerste producten van de HelloFresh Markt</p>
-
-			<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/specialoccasion.png"
-				alt="">
-			<h3>Voor speciale momenten</h3>
-			<p>restaurantwaardige Premium-recepten</p>
-
-			<button>Bekijk het menu</button>
-
-
-			<!-- </section> -->
-
-
-
-
-
 		</section>
+
+		<!-- <section>
+			<ul>
+				<li>
+				<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/busyweek.png"
+					alt="">
+				<h3>Voor drukke dagen</h3>
+				<p>snelle recepten in 20 minuten klaar</p>
+				</li>
+				<li>
+					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/impressyourguest.png"
+						alt="">
+					<h3>Voor meer gemak</h3>
+					<p>een extra maaltijd of dubbele portie</p>
+				</li>
+				<li>
+					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/deliciousextra.png"
+						alt="">
+					<h3>Voor een beetje meer</h3>
+					<p>de lekkerste producten van de HelloFresh Markt</p>
+				</li>
+
+				<li>
+					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/specialoccasion.png"
+						alt="">
+					<h3>Voor speciale momenten</h3>
+					<p>restaurantwaardige Premium-recepten</p>
+				</li>
+			</ul> -->
+
+
+		<section id="bolletjesAndSwipen" class="caroCarrousel2" aria-label="Voorbeeld met bolletjes en swipen"
+			tabIndex="-1">
+			<!-- de id kun je zelf een naam geven en geef je mee in de js -->
+			<ul>
+				<li id="element1">
+					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/busyweek.png"
+						alt="">
+					<h3>Voor drukke dagen</h3>
+					<p>snelle recepten in 20 minuten klaar</p>
+				</li>
+
+				<li id="element2">
+					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/impressyourguest.png"
+						alt="">
+					<h3>Voor meer gemak</h3>
+					<p>een extra maaltijd of dubbele portie</p>
+				</li>
+
+				<li id="element3">
+					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/deliciousextra.png"
+						alt="">
+					<h3>Voor een beetje meer</h3>
+					<p>de lekkerste producten van de HelloFresh Markt</p>
+				</li>
+
+				<li id="element4">
+					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/specialoccasion.png"
+						alt="">
+					<h3>Voor speciale momenten</h3>
+					<p>restaurantwaardige Premium-recepten</p>
+				</li>
+			</ul>
+
+			
+		</section>
+
+		<a>Bekijk het menu</a>
+
+
+
+
+
+
+
+
+
 
 		<section>
 
 			<!-- <section> -->
 			<h4>Zo denken onze thuiskoks erover</h4>
-			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto/hellofresh_website/gb/cms/icons/icon_review.svg"alt="">
+			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto/hellofresh_website/gb/cms/icons/icon_review.svg"
+				alt="">
 			<h3>Bas zegt</h3>
 			<p>Wij genieten elke week van lekkere recepten en eten gevarieerder dan ooit. De ingrediënten zijn altijd
 				van goede kwaliteit en omdat het in precies de juiste porties wordt bezorgd, verspillen we niks.</p>
@@ -218,6 +305,9 @@
 				ingrediënten bij jou thuis - eet je ook mee?</p>
 			<button>Bestel jouw box</button>
 		</section>
+
+
+
 
 	</main>
 
@@ -245,5 +335,3 @@
 </body>
 
 </html>
-
-html
