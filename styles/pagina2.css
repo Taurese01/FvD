@@ -1,0 +1,296 @@
+
+/* alle kleuren naar die root veranderen en alle pixels in EM veranderen! */
+
+
+
+
+section:nth-of-type(1){
+    background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_410,q_auto:eco,w_420/hellofresh_website/nl/cms/duurzaamheid/Durability_-_Mobile.png");
+    min-height: 410px; /* bah px */
+    /* padding-bottom: 20px; */
+    /* padding-top: 20px; */
+    padding:1.125em;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* width: 100%; */
+    /* display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    display:grid;
+    place-content: center;
+    place-items: center;
+    /* sanne vindt grid ok  - flex trouwens ook */
+    text-align: center;
+}
+
+/* h1 { 
+} */
+
+section:nth-of-type(1) h2{
+    /* color: rgb(60, 160, 51);  de groene kleur op de website is als tekst niet goed te zien, om deze reden heb ik voor een zwarte tekst gekozen.*/
+    color: black;
+    margin: 0px;
+    font-family: Agrandir, Verdana, Geneva, sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 70%;
+    margin: 0.5em;
+}
+
+section:nth-of-type(1) p {
+    color: rgb(52, 52, 52);
+    font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+
+
+/* alle kleuren naar die root veranderen en alle pixels in EM veranderen! */
+
+
+section:nth-of-type(2){
+    text-align: center;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding-bottom: 40px;
+}
+
+/* section:nth-of-type(2) h2{
+
+} */
+
+section:nth-of-type(2) p{
+    color: rgb(52, 52, 52);
+    font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+    margin: 1em;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+section:nth-of-type(2) a{
+    color: #067A46;
+    /* display: inline-block; */
+    display: table;
+    vertical-align: text-bottom;
+    font-size: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    min-height: 40px;
+    line-height: 40px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #067A46;
+    box-shadow: none;
+    border-radius: 4px;
+    margin: auto;
+    text-decoration: none;
+}
+
+/* Carrousel 2 */
+
+
+main section:nth-of-type(3) {
+  /* basis waarden die door de hele carrousel gebruikt worden */
+  /* kun je zelf aanpassen */
+  --caroCarrouselMainColor:#333;
+--caroCarrouselAccentColor:#1b75b3;
+  --caroCarrouselShadeColor:#ddd9;
+
+position: relative;
+  outline:none;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #EEEEEE;
+  padding-bottom: 40px;
+  background-color: #FFFFFF;
+ 
+}
+
+  
+section:nth-of-type(3) {
+  border-bottom: 1px solid #EEEEEE;
+} 
+
+section:nth-of-type(3) h2 {
+    text-align: center;
+    padding-top: 1em;
+  } 
+
+section:nth-of-type(3) a{
+color: #067A46;
+/* display: inline-block; */
+display: table;
+vertical-align: text-bottom;
+font-size: 16px;
+padding-left: 24px;
+padding-right: 24px;
+min-height: 40px;
+line-height: 40px;
+background-color: transparent;
+border-style: solid;
+border-width: 1px;
+border-color: #067A46;
+box-shadow: none;
+border-radius: 4px;
+margin: auto;
+text-decoration: none;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+.caroCarrousel2 {
+  --caroCarrouselMainColor:#ccc;
+  --caroCarrouselShadeColor:#4449;
+}
+}
+
+
+/************************************/
+/* de carrousel elementen container */
+main section:nth-of-type(3) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap:1em;
+  padding:0 1.25em;
+  padding-bottom: 40px;
+  /* handmatig scrollen is mogelijk */
+  overflow: auto;
+  padding-top: 1em;
+  
+  /* snappen als er gescrolled wordt - andere helft bij li */
+scroll-snap-type: inline mandatory;
+
+/* smooth als met js gescrolled wordt */
+  scroll-behavior: smooth;
+
+/* scrollbar zoveel mogelijk verbergen */
+-webkit-overflow-scrolling: touch; /* voor iOS*/
+-ms-overflow-style: none; /* voor IE */
+  scrollbar-width: none; /* voor firefox */
+}
+
+main section:nth-of-type(3) ul::-webkit-scrollbar {
+/* scrollbar zoveel mogelijk verbergen */
+display: none; /* voor chrome, safari en edge*/
+}
+
+
+/**************************/
+/* de carrousel elementen */
+main section:nth-of-type(3) ul li {
+flex-basis: 70%;
+flex-shrink: 0;
+/* snappen als er gescrolled wordt - andere helft bij ul */
+  scroll-snap-align:center;
+  position: relative;
+}
+
+
+/**********************************/
+/* de carrousel elementen content */
+
+
+main section:nth-of-type(3) ul li h3 {
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  margin:0;
+  min-height:10em;
+  background-image: linear-gradient(#000c, #0000);
+  color:white;
+  padding:1em; 
+  border-radius:5px 5px 0 0;
+}
+
+main section:nth-of-type(3) ul li p {
+  color: #FFFFFF;
+  font-family: Agrandir,Verdana,Geneva,sans-serif;
+  line-height: 24px;
+  margin-bottom: 8px;
+  max-width: 80%;
+  position: absolute;
+  top: 30px;
+  left: 18px;
+}
+
+/* de stijlen voor jouw content hier */
+main section:nth-of-type(3) ul li > img {
+display: block;
+width: 100%;
+object-fit: cover;
+border-radius: 5px;
+margin: auto;
+box-shadow: rgb(228 228 228) 0px 3px 3px;
+height: 315px;
+}
+
+
+section:nth-of-type(4){
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.85em;
+}
+
+section:nth-of-type(4) img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+section:nth-of-type(4) h3{
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+
+section:nth-of-type(4) p{
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(36, 36, 36);
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+
+section:nth-of-type(4) a{
+    width: 100%;
+    justify-content: center;
+    border-radius: 4px;
+    border-style: none;
+    font-size: 16px;
+    padding: 12px 24px;
+    background-color: rgb(6, 122, 70);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* footer{
+
+
+} */
+
+
+/* footer{
+
+
+} */
+
