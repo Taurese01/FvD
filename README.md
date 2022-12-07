@@ -187,6 +187,7 @@ Ik heb van de student assistentes een mogelijke oplossing meegekregen voor mijn 
   De agenda bewerken gaat erg lastig dus ik zet alle dingen hier neer:
   
   Taurese: Ik weet niet hoe ik meerdere dropdown UL's kan maken binnen een footer. 
+  Brianne: Heeft het zelfde probleem als ik. 
   
   
 
