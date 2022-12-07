@@ -257,3 +257,44 @@ function handleKeydown(event) {
     deNav.classList.remove("toonMenu");
   }
 }
+
+
+
+// let deEersteButton = document.querySelector("footer section:nth-of-type(1) > button");
+// let deEersteSection = document.querySelector("footer section:nth-of-type(1)");
+
+// deEersteButton.addEventListener("click", toggleEersteMenu);
+
+// function toggleEersteMenu() {
+// 	deEersteSection.classList.toggle("open");
+// }
+
+
+
+// let deTweedeButton = document.querySelector("footer section:nth-of-type(2) > button");
+// let deTweedeSection = document.querySelector("footer section:nth-of-type(2)");
+
+// deTweedeButton.addEventListener("click", toggleTweedeMenu);
+
+// function toggleTweedeMenu() {
+// 	deTweedeSection.classList.toggle("open");
+// }
+
+
+
+let deMenuButtons = document.querySelectorAll("footer section > button");
+let deMenuH3s = document.querySelectorAll("footer section > h3");
+
+deMenuButtons.forEach(deMenuButton => {
+	deMenuButton.addEventListener("click", toggleMenu);
+});
+
+deMenuH3s.forEach(deMenuH3 => {
+	deMenuH3.addEventListener("click", toggleMenu);
+});
+
+function toggleMenu() {
+	let deButtonWaaropGekliktIs = this; 
+	let deSectionWaarDeButtonInZit = deButtonWaaropGekliktIs.closest("section");
+	deSectionWaarDeButtonInZit.classList.toggle("open");
+}
