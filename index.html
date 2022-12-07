@@ -39,7 +39,7 @@
 		</nav> -->
 
 		<!-- het logo -->
-		<a href="#">
+		<a href="#" aria-label="het logo van onze website">
 			<img src="https://img.hellofresh.com/image/upload/c_scale,f_auto,q_auto,w_230/v1600959926/Hello_Fresh_Lockup.png"
 				alt="go home" />
 		</a>
@@ -47,52 +47,57 @@
 		<!-- de open button -->
 		<!-- de button is niet relevant voor screenreaders -->
 		<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
-		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
+		<button aria-hidden="true" aria-label="button die de navigatie van de website uitklapt"><img
+				src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
 
 
 		<!--  het menu -->
 		<nav>
 			<!-- de sluit button -->
 			<!-- de button is ook niet relevant voor screenreaders -->
-			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" /></button>
+			<button aria-hidden="true" aria-label="button die de navigatie weer sluit">
+				<img src="https://assets.codepen.io/274456/ui-icon-cross.svg" alt="" />
+			</button>
 
 			<ul>
-				<li><a href="#">Inloggen</a></li>
-				<li><a href="#">Onze boxen</a></li>
-				<li><a href="#">Zo werkt het</a></li>
-				<li><a href="#">Op het menu</a></li>
-				<li><a href="#">Recepten</a></li>
+				<li aria-label="link naar inloggen"><a href="#">Inloggen</a></li>
+				<li aria-label="link naar onze boxen pagina"><a href="#">Onze boxen</a></li>
+				<li aria-label="link naar zo werkt het pagina"><a href="#">Zo werkt het</a></li>
+				<li aria-label="link naar op het menu pagina"><a href="#">Op het menu</a></li>
+				<li aria-label="link naar recepten pagina"><a href="#">Recepten</a></li>
 
-				<li><a href="#">Hulp</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Markt</a></li>
-				<li><a href="#">Cadeaubon</a></li>
-				<li><a href="#">Duurzaamheid</a></li>
-				<li><a href="#">CO2-neutraal</a></li>
+				<li aria-label="link naar hulp pagina"><a href="#">Hulp</a></li>
+				<li aria-label="link naar contact pagina"><a href="#">Contact</a></li>
+				<li aria-label="link naar markt pagina"><a href="#">Markt</a></li>
+				<li aria-label="link naar cadeaubon pagina"><a href="#">Cadeaubon</a></li>
+				<li aria-label="link naar duurzaamheid pagina"><a href="#">Duurzaamheid</a></li>
+				<li aria-label="link naar co2-neutraal pagina"><a href="#">CO2-neutraal</a></li>
 			</ul>
 		</nav>
 
 	</header>
 
-
+	<!-- aria-label="" -->
 	<main>
 
 		<!-- <h1>Hello Fresh</h1> -->
 
-		<section>
+		<section aria-label="Informatie en link naar bestellen">
 			<!-- <img src="" alt=""> -->
-			<h1>Bespaar</h1>
-			<p>Kies elke week uit 35 recepten vanaf slechts € 4 per persoon</p>
-			<a href="#">Bestel jouw box</a>
+			<h1 aria-label="Bespaar">Bespaar</h1>
+			<p aria-label="Kies elke week uit 35 recepten vanaf slechts € 4 per persoon">Kies elke week uit 35 recepten
+				vanaf slechts € 4 per persoon</p>
+			<a href="#" aria-label="Link die leid naar de Bestel jouw box pagina">Bestel jouw box</a>
 		</section>
 
-		<section>
-			<h3>Een kijkje in de keuken</h3>
-			<p>Bekijk de HelloFresh-ervaringen van onze trouwe thuiskoks op Instagram!
-				<img src="https://hf-website-live.s3-eu-west-1.amazonaws.com/be/cms/landing_pages/icon-instagram.svg">
+		<section aria-label="Link naar de instagram pagina">
+			<h3 aria-label="Een kijkje in de keuken">Een kijkje in de keuken</h3>
+			<p aria-label="Bekijk de HelloFresh-ervaringen van onze trouwe thuiskoks op Instagram!">Bekijk de
+				HelloFresh-ervaringen van onze trouwe thuiskoks op Instagram!
+				<img src="https://hf-website-live.s3-eu-west-1.amazonaws.com/be/cms/landing_pages/icon-instagram.svg"
+					aria-label="link naar de instagram pagina">
 			</p>
 		</section>
-
 
 		<!-- <section>
 			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/life.of.zoe.the.frenchie.jpg"
@@ -115,86 +120,99 @@
 			<p>Dit is een recept dat ik bewaar om nog vaker te maken. Lekker en supersimpel om te maken!</p>
 		</section> -->
 
-		<section id="bolletjesAndSwipen" class="caroCarrousel" aria-label="Voorbeeld met bolletjes en swipen"
-			tabIndex="-1">
+		<section id="bolletjesAndSwipen" class="caroCarrousel"
+			aria-label="Slider met berichten van andere klanten op de instagram pagina" tabIndex="-1">
 			<!-- de id kun je zelf een naam geven en geef je mee in de js -->
 			<ul>
+
+
 				<li id="element1"><img
 						src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/life.of.zoe.the.frenchie.jpg"" alt="
-						kittens" />
-					<p>Papa en mama hebben weer heerlijke maaltijden voor komende week! Wat wordt dat weer genieten! 😍
+						kittens" aria-label="afbeelding van het gerecht" />
+					<p
+						aria-label="Papa en mama hebben weer heerlijke maaltijden voor komende week! Wat wordt dat weer genieten!">
+						Papa en mama hebben weer heerlijke maaltijden voor komende week! Wat wordt dat weer genieten! 😍
 					</p>
 				</li>
 
 				<li id="element2"><img
 						src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/livingbynathalie.jpg"
-						alt="kittens" />
-					<h4>livingbynathalie</h4>
-					<p>Hello late lunch! 🥞</p>
+						alt="kittens" aria-label="afbeelding van het gerecht" />
+					<h4 aria-label="livingbynathalie">livingbynathalie</h4>
+					<p aria-label="Hello late lunch!"> Hello late lunch! 🥞</p>
 				</li>
 
 				<li id="element3"><img
 						src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/kokenmetpeper_edited.png"
-						alt="kittens" />
-					<h4>kokenmetpeper</h4>
-					<p>Risotto met Kabeljauw.💚✨ Een heerlijk én simpel recept van HelloFresh!</p>
+						alt="kittens" aria-label="afbeelding van het gerecht" />
+					<h4 aria-label="kokenmetpeper">kokenmetpeper</h4>
+					<p aria-label="Risotto met Kabeljauw. Een heerlijk én simpel recept van HelloFresh!">Risotto met
+						Kabeljauw.💚✨ Een heerlijk én simpel recept van HelloFresh!</p>
 				</li>
 
 				<li id="element4"><img
 						src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/nl/cms/Contentful%20Landing%20Pages/riannekramer_edited.png"
-						alt="kittens" />
-					<h4>riannekramer</h4>
-					<p>Dit is een recept dat ik bewaar om nog vaker te maken. Lekker en supersimpel om te maken!</p>
+						alt="kittens" aria-label="afbeelding van het gerecht" />
+					<h4 aria-label="riannekramer">riannekramer</h4>
+					<p
+						aria-label="Dit is een recept dat ik bewaar om nog vaker te maken. Lekker en supersimpel om te maken">
+						Dit is een recept dat ik bewaar om nog vaker te maken. Lekker en supersimpel om te maken!</p>
 				</li>
 			</ul>
 
 			<nav>
 				<ul>
-					<li><a href="#element1" aria-label="go to element1"></a></li>
-					<li><a href="#element2" aria-label="go to element2"></a></li>
-					<li><a href="#element3" aria-label="go to element3"></a></li>
-					<li><a href="#element4" aria-label="go to element4"></a></li>
+					<li><a href="#element1" aria-label="ga naar bericht 1"></a></li>
+					<li><a href="#element2" aria-label="ga naar bericht 2"></a></li>
+					<li><a href="#element3" aria-label="ga naar bericht 3"></a></li>
+					<li><a href="#element4" aria-label="ga naar bericht 4"></a></li>
 				</ul>
 			</nav>
 		</section>
 
 
-		<section>
-			<h3>Zo werkt het</h3>
-			<p>Kies elke week zelf je recepten • Krijg de ingrediënten thuisbezorgd • Kook eenvoudig een lekkere
+		<section aria-label="Hoe het process werkt sectie">
+			<h3 aria-label="Zo werkt het">Zo werkt het</h3>
+			<p aria-label="Kies elke week zelf je recepten, Krijg de ingrediënten thuisbezorgd, Kook eenvoudig een lekkere
+			maaltijd">Kies elke week zelf je recepten • Krijg de ingrediënten thuisbezorgd • Kook eenvoudig een lekkere
 				maaltijd</p>
 
 
 			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/be/cms/homepage/image_columns/hiw-1-v2.png"
-				alt="">
-			<h4>Stel jouw box samen</h4>
-			<p>Kies je menuvoorkeur en het aantal personen en maaltijden.</p>
+				alt="" aria-label="afbeelding die de website op een mobiel scherm toont">
+			<h4 aria-label="Stel jouw box samen">Stel jouw box samen</h4>
+			<p aria-label="Kies je menuvoorkeur en het aantal personen en maaltijden.">Kies je menuvoorkeur en het
+				aantal personen en maaltijden.</p>
 
 			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/be/cms/homepage/image_columns/hiw-2-v2.png"
-				alt="">
-			<h4>Kies jouw recepten en producten</h4>
-			<p>Geniet van volop variatie dankzij ons wekelijks wisselende menu.</p>
+				alt="" aria-label="afbeelding van een gerecht op een bord">
+			<h4 aria-label="Kies jouw recepten en producten">Kies jouw recepten en producten</h4>
+			<p aria-label="Geniet van volop variatie dankzij ons wekelijks wisselende menu.">Geniet van volop variatie
+				dankzij ons wekelijks wisselende menu.</p>
 
 			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/be/cms/homepage/image_columns/hiw-3-v2.png"
-				alt="">
-			<h4>Krijg wekelijks een box thuisbezorgd</h4>
-			<p>Ontvang jouw box op een moment naar keuze.</p>
+				alt="" aria-label="afbeelding van de ingredienten die zijn geleverd">
+			<h4 aria-label="Krijg wekelijks een box thuisbezorgd">Krijg wekelijks een box thuisbezorgd</h4>
+			<p aria-label="Ontvang jouw box op een moment naar keuze">Ontvang jouw box op een moment naar keuze.</p>
 
 			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto,w_375/hellofresh_website/be/cms/homepage/image_columns/hiw-4-v3.png"
-				alt="">
-			<h4>Kook met de beste ingrediënten</h4>
-			<p>Bereid in 4 tot 6 eenvoudige stappen een verse maaltijd.</p>
+				alt="" aria-label="afbeelding van het gerecht dat word gekocht">
+			<h4 aria-label="Kook met de beste ingrediënten">Kook met de beste ingrediënten</h4>
+			<p aria-label="Bereid in 4 tot 6 eenvoudige stappen een verse maaltijd">Bereid in 4 tot 6 eenvoudige stappen
+				een verse maaltijd.</p>
 
-			<a href="#">Bestel jouw box</a>
-			<strong>Je kunt de box elke week aanpassen, pauzeren of opzeggen.</strong>
+			<a href="#" aria-label="Link die leid naar de Bestel jouw box pagina">Bestel jouw box</a>
+			<strong aria-label="Je kunt de box elke week aanpassen, pauzeren of opzeggen.">Je kunt de box elke week
+				aanpassen, pauzeren of opzeggen.</strong>
 
 		</section>
 
 
-
-		<section>
-			<h3>Jouw smaak, jouw box</h3>
-			<p>We hebben recepten en producten voor elk moment. Pas jouw box elke week aan naar jouw plannen.</p>
+		<section aria-label="uitleg over het koken van jouw gerechten">
+			<h3 aria-label="Jouw smaak, jouw box">Jouw smaak, jouw box</h3>
+			<p
+				aria-label="We hebben recepten en producten voor elk moment. Pas jouw box elke week aan naar jouw plannen.">
+				We hebben recepten en producten voor elk moment. Pas jouw box elke week aan naar jouw plannen.</p>
 		</section>
 
 		<!-- <section>
@@ -227,51 +245,54 @@
 			</ul> -->
 
 
-		<section aria-label="Voorbeeld met bolletjes en swipen">
+		<section aria-label="uitleg over het koken van jouw gerechten">
 			<!-- de id kun je zelf een naam geven en geef je mee in de js -->
 			<ul>
 				<li>
-					<h3>Voor drukke dagen</h3>
-					<p>snelle recepten in 20 minuten klaar</p>
+					<h3 aria-label="Voor drukke dagen">Voor drukke dagen</h3>
+					<p aria-label="snelle recepten in 20 minuten klaar">snelle recepten in 20 minuten klaar</p>
 					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/busyweek.png"
 						alt="">
-					
+
 				</li>
 
-				<li id>
-					<h3>Voor meer gemak</h3>
+				<li>
+					<h3 aria-label="Voor meer gemak">Voor meer gemak</h3>
 					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/impressyourguest.png"
 						alt="">
-					<p>een extra maaltijd of dubbele portie</p>
+					<p aria-label="een extra maaltijd of dubbele portie">een extra maaltijd of dubbele portie</p>
 				</li>
 
-				<li id>
-					<h3>Voor een beetje meer</h3>
+				<li>
+					<h3 aria-label="Voor een beetje meer">Voor een beetje meer</h3>
 					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/deliciousextra.png"
 						alt="">
-					<p>de lekkerste producten van de HelloFresh Markt</p>
+					<p aria-label="de lekkerste producten van de HelloFresh Markt">de lekkerste producten van de
+						HelloFresh Markt</p>
 				</li>
 
-				<li id=>
-					<h3>Voor speciale momenten</h3>
+				<li>
+					<h3 aria-label="Voor speciale momenten">Voor speciale momenten</h3>
 					<img src="https://img.hellofresh.com/q_60,w_640,f_auto,c_limit,fl_lossy/hellofresh_website/gb/cms/homepage/homepage%20to%20Contentful/specialoccasion.png"
 						alt="">
-					<p>restaurantwaardige Premium-recepten</p>
+					<p aria-label=restaurantwaardige Premium-recepten">restaurantwaardige Premium-recepten</p>
 				</li>
 			</ul>
 
-			<a>Bekijk het menu</a> 
+			<a aria-label="Link naar het menu">Bekijk het menu</a>
 		</section>
 
 
-		<section>
+		<section aria-label="Reviews van gebruikers">
 
 			<!-- <section> -->
-			<h4>Zo denken onze thuiskoks erover</h4>
+			<h4 aria-label="Zo denken onze thuiskoks erover">Zo denken onze thuiskoks erover</h4>
 			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto/hellofresh_website/gb/cms/icons/icon_review.svg"
 				alt="">
-			<h3>Bas zegt</h3>
-			<p>Wij genieten elke week van lekkere recepten en eten gevarieerder dan ooit. De ingrediënten zijn altijd
+			<h3 aria-label="Bas zegt">Bas zegt</h3>
+			<p aria-label="Wij genieten elke week van lekkere recepten en eten gevarieerder dan ooit. De ingrediënten zijn altijd
+			van goede kwaliteit en omdat het in precies de juiste porties wordt bezorgd, verspillen we niks.">Wij genieten elke
+				week van lekkere recepten en eten gevarieerder dan ooit. De ingrediënten zijn altijd
 				van goede kwaliteit en omdat het in precies de juiste porties wordt bezorgd, verspillen we niks.</p>
 			<!-- <img src="http://www.w3.org/2000/svg"> -->
 			<!-- </section> -->
@@ -279,8 +300,11 @@
 			<!-- <section> -->
 			<img src="https://img.hellofresh.com/f_auto,fl_lossy,q_auto/hellofresh_website/gb/cms/icons/icon_review.svg"
 				alt="">
-			<h3>Joan zegt</h3>
-			<p>Ik kan niet meer zonder HelloFresh - het is zo'n makkelijke manier van boodschappen doen en ik ben zeer
+			<h3 aria-label="Joan zegt">Joan zegt</h3>
+			<p aria-label="Ik kan niet meer zonder HelloFresh - het is zo'n makkelijke manier van boodschappen doen en ik ben zeer
+			tevreden over de service. Mijn eetgewoonten zijn sterk verbeterd en ik eet veel gevarieerder. Het eten
+			is heerlijk en de recepten zijn makkelijk te volgen. Ik ben fan!">Ik kan niet meer zonder HelloFresh - het is zo'n
+				makkelijke manier van boodschappen doen en ik ben zeer
 				tevreden over de service. Mijn eetgewoonten zijn sterk verbeterd en ik eet veel gevarieerder. Het eten
 				is heerlijk en de recepten zijn makkelijk te volgen. Ik ben fan!</p>
 			<!-- <img src="http://www.w3.org/2000/svg"> -->
@@ -288,33 +312,239 @@
 		</section>
 
 		<section>
-			<h2>Aan de slag</h2>
-			<p>Met HelloFresh is vers en gevarieerd eten een eitje! Jij kiest wat je kookt en wij bezorgen alle
+			<h2 aria-label="Aan de slag">Aan de slag</h2>
+			<p aria-label="Met HelloFresh is vers en gevarieerd eten een eitje! Jij kiest wat je kookt en wij bezorgen
+			alle ingrediënten bij jou thuis - eet je ook mee?">Met HelloFresh is vers en gevarieerd eten een eitje! Jij kiest wat je kookt en wij bezorgen
+				alle
 				ingrediënten bij jou thuis - eet je ook mee?</p>
-			<a href="#">Bestel jouw box</a>
+			<a href="#" aria-label="Link die leid naar de Bestel jouw box pagina">Bestel jouw box</a>
 		</section>
 
 
 
 	</main>
 
+	<footer aria-label="footer met links naar alle paginas">
+		<section>
+			<h3>Hello Fresh</h3>
+			<button aria-label="toggle het eerste footer menu, deze gaat over hello fresh"><img
+					src="https://assets.codepen.io/274456/ui-icon-arrow.svg" alt="" /></button>
+			<ul>
+				<li aria-label="link naar cadeaubon pagina"><a href="#">Cadeaubon</a></li>
+				<li aria-label="link naar unidays pagina"><a href="#">Unidays</a></li>
+				<li aria-label="link naar student beans pagina"><a href="#">Student Beans</a></li>
+				<li aria-label="link naar promotions pagina"><a href="#">Promotions</a></li>
+				<li aria-label="link naar blog pagina"><a href="#">Blog</a></li>
+				<li aria-label="link naar recepten pagina"><a href="#">Recepten</a></li>
+				<li aria-label="link naar cookievoorkeuren pagina"><a href="#">Cookievoorkeuren</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Ons bedrijf</h3>
+			<button aria-label="toggle het tweede footer menu, deze gaat over ons bedrijf"><img
+					src="https://assets.codepen.io/274456/ui-icon-arrow.svg" alt="" /></button>
+			<ul>
+				<li aria-label="link naar hellofresh group pagina"><a href="#">HelloFresh Group</a></li>
+				<li aria-label="link naar jobs pagina"><a href="#">Jobs</a></li>
+				<li aria-label="link naar pers pagina"><a href="#">Pers</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Samenwerken?</h3>
+			<button aria-label="toggle het derde footer menu, deze gaat over samenwerken"><img
+					src="https://assets.codepen.io/274456/ui-icon-arrow.svg" alt="" /></button>
+			<ul>
+				<li aria-label="link naar Partnerprogramma/Affiliates pagina"><a href="#">Partnerprogramma/Affiliates</a></li>
+				<li aria-label="link naar Influencers pagina"><a href="#">Influencers</a></li>
+				<li aria-label="link naar Marketingsamenwerking pagina"><a href="#">Marketingsamenwerking</a></li>
+				<li aria-label="link naar voor bedrijvenpagina"><a href="#">Voor bedrijven</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Hulp Nodig?</h3>
+			<button aria-label="toggle het vierde footer menu, deze gaat over het zoeken van hulp"><img
+					src="https://assets.codepen.io/274456/ui-icon-arrow.svg" alt="" /></button>
+			<ul>
+				<li aria-label="link naar Contact pagina"><a href="#">Contact</a></li>
+				<li aria-label="link naar Helpcenter pagina"><a href="#">Helpcenter</a></li>
+				<li aria-label="link naar Tevreden pagina"><a href="#">Tevreden</a></li>
+				<li aria-label="link naar voor bedrijven pagina"><a href="#">Voor bedrijven</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<img src="images/facebook-icon-circle-seeklogo.com.png" aria-label="link naar de facebook pagina">
+			<img src="images/logo-twitter-png-47449.png" aria-label="link naar de twitter pagina">
+			<img src="images/instagram-logo-circle.png" aria-label="link naar de instagram pagina">
+		</section>
+
+		<section>
+			<ul>
+				<li aria-label="link naar de Algemene voorwaarden">Algemene voorwaarden</li>
+				<li aria-label="link naar de Privacy- en Cookiestatement ">Privacy- en Cookiestatement</li>
+			</ul>
+		</section>
+
+		<section>
+			<p aria-label="copyright melding voor de pagina">© HelloFresh 2022</p>
+		</section>
+	</footer>
 
 
-	<footer>
+	<!-- <footer>
 		<ul>
 			<li>Hello Fresh</li>
 			<li>Ons bedrijf</li>
 			<li>Samenwerken?</li>
 			<li>Hulp Nodig?</li>
-		</ul>
+		</ul> -->
 
-		<!-- <section>
+	<!-- Footer is meerdere OL's met buttons en een H3
+			HTML
+		H3
+		Button
+		ul
+		li's met <a>
+
+		
+		CSS
+		display: flex
+		flex-wrap:wrap;
+
+
+		image in de button! & aria label!!
+
+		section h3{
+			width: flex-grow: 1;
+		}
+
+		footer section button{
+		order:-100; KAN WEG
+		width: 3em;
+		aspect-ratio:1/1;
+		}
+
+		footer section button img{
+			transform:rotate(.25turn);
+		}
+
+
+		footer section button img{
+		transform:rotate(-.25turn);
+		transition: 0.3s;
+		}
+
+
+		footer section.open button{
+		order:-100; KAN WEG
+		}
+
+		section.open ul{
+		max-height: 20em;
+		transition: .3s
+		}
+
+		section ul{
+			width:100%
+			max-height: 0em;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+			overflow:hidden;
+		}
+
+		section ul li{
+
+		}
+
+		section ul li a{
+			display: block;
+			padding: 1em;
+		}
+
+		margin: 0;
+
+
+
+		@media (min-width:32em){
+			section button{
+			order:-100;
+		}
+		}
+
+		@media (min-width:50em)
+		footer section ul, footer section.open ul{
+			max-height: unset;
+		}
+		footer{
+			display: flex; 
+			gap: 1em;
+		}
+
+		footer section > button {
+			display: none;
+		}
+
+		}
+
+
+		JS 
+
+		let deEersteButton = document.querySelector("footer section:nth-of-type(1) > button");
+		let deEersteSection = document.querySelector("footer section:nth-of-type(1)");
+
+		deEersteButton.addEventListener("click, toggleEersteMenu");
+
+		function toggleEersteMenu(){
+			deEersteSection.classList.toggle("open");
+
+		};
+
+
+		let deTweedeButton = document.querySelector("footer section:nth-of-type(2) > button");
+		let deTweedeSection = document.querySelector("footer section:nth-of-type(2)");
+
+		deTweedeButton.addEventListener("click, toggleTweedeMenu");
+
+		function toggleTweedeMenu(){
+			deTweedeSection.classList.toggle("open");
+
+		};
+
+
+		SKIP DIT. 
+
+		let deMenuButtons = document.querySelectorAll("footer section > button");
+		let deMenuH3s = document.querySelectorAll("footer section > h3");
+
+		deMenuButtons.forEach(deMenuButton => {
+		deMenuButtons.addEventListener("click, toggleMenu");
+		});
+
+		deMenuButtons.forEach(deMenuH3s => {
+		deMenuButtons.addEventListener("click, toggleMenu");
+		});
+
+
+		function toggleMenu(){
+			let deButtonWaaropGekliktIs = this;
+			let deSectionWaarDeButtonInZit = deButtonWaaropGekliktIs.closest("section");
+			deSectionWaarDeButtonInZit.classList.toggle("open");
+		}
+
+
+		
+		-->
+
+	<!-- <section>
 			<img src="http://www.w3.org/2000/svg" alt="">
 			<img src="http://www.w3.org/2000/svg" alt="">
 			<img src="http://www.w3.org/2000/svg" alt="">
 		</section> -->
 
-	</footer>
 
 
 
