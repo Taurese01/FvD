@@ -210,52 +210,6 @@ Ik heb van de student assistentes een mogelijke oplossing meegekregen voor mijn 
 <details>
   <summary>uitwerken na test in 8e werkgroep</summary>
 
-  ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
-  #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  
-  Aantekeningen frontend accesabilty mijn website
-
-
-
-Muis
-Met muis is de de website goed te gebruiken. Je kan gemakkelijk door de hele website navigeren zonder enige probleem. Je kan verder ook alle buttons en links drukken. 
-
-(Screenshots)
-
-Toetsenbord 
-Je kan gemakkelijk door de website heen “tabben” hierbij ga je alle links en buttons af en zie je goed welke geselecteerd zijn. Ook kan je met tab-shift weer terug gaan in je pagina, dit zorgt ervoor dat dit erg makkelijk is. 
-
-(Screenshot)
-
-Kleurtjes
-Met de kleurtjes gaat het wederom goed, dit is omdat de kleuren veranderen met de colorblindly plugin. Hierbij worden de zwakkere kleuren aangepast. 
-(Screenshots)
-
-
-
 ### Bevindingen
 
 #### Slechte motoriek
