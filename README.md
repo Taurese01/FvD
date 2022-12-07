@@ -235,10 +235,43 @@ Ik heb van de student assistentes een mogelijke oplossing meegekregen voor mijn 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  Aantekeningen frontend accesabilty mijn website
 
-</details>
 
 
+Muis
+Met muis is de de website goed te gebruiken. Je kan gemakkelijk door de hele website navigeren zonder enige probleem. Je kan verder ook alle buttons en links drukken. 
+
+(Screenshots)
+
+Toetsenbord 
+Je kan gemakkelijk door de website heen “tabben” hierbij ga je alle links en buttons af en zie je goed welke geselecteerd zijn. Ook kan je met tab-shift weer terug gaan in je pagina, dit zorgt ervoor dat dit erg makkelijk is. 
+
+(Screenshot)
+
+Kleurtjes
+Met de kleurtjes gaat het wederom goed, dit is omdat de kleuren veranderen met de colorblindly plugin. Hierbij worden de zwakkere kleuren aangepast. 
+(Screenshots)
+
+
+
+### Bevindingen
+
+#### Slechte motoriek
+Slecht motoriek is de website ook goed te gebruiken. Dit is omdat de website verticaal goed te gebruiken is, je hoeft niet op (veel) buttons te klikken om te komen waar je wilt zijn.
+
+#### Visuele beperkingen
+De website is goed te gebruiken met een visuele beperking, dit is omdat er veel afbeeldingen zijn die veel ruimte innemen. Alleen de tekst op mijn website kan een stukje groter, dit is nu nog best klein.
+
+#### Concentratieprobleem
+Met concentratie problemen is de website nog redelijk te gebruiken. Dit is wederom omdat er veel grote afbeeldingen op de pagina zijn die al een voorbeeld geven van wat de sectie inhoud. 
+
+#### Spasmes/Parkinson
+Met parkinsons is de website goed te gebruiken. Dit is omdat de website veel informatie en afbeeldingen heeft en niet veel dingen waar je hoeft te klikken. 
+
+#### Screenreaders
+Met de screenreaders is de pagina erg goed te gebruiken. Dit is omdat ik op bijna alle elementen een aria-label heb toegevoegd die uitlegt wat de content inhoud (sections, kopjes, woorden, afbeeldingen, buttons, links).
 
 
 
