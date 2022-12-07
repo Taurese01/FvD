@@ -248,7 +248,10 @@ Met de screenreaders is de pagina erg goed te gebruiken. Dit is omdat ik op bijn
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
-
+  ### Agenda meeting
+  
+  Taurese: Ik weet niet hoe ik de header die we in de les hebben gemaakt er goed uit kan laten zien op de desktop versie. En dat mijn navigatie voor een of andere reden niet opent op mijn tweede pagina desondanks de code precies hetzelfde is (css & javascript).
+  
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
