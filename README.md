@@ -273,6 +273,7 @@ Met parkinsons is de website goed te gebruiken. Dit is omdat de website veel inf
 #### Screenreaders
 Met de screenreaders is de pagina erg goed te gebruiken. Dit is omdat ik op bijna alle elementen een aria-label heb toegevoegd die uitlegt wat de content inhoud (sections, kopjes, woorden, afbeeldingen, buttons, links).
 
+  </details>
 
 
 ## Voortgang 3 (week 4)
