@@ -291,12 +291,12 @@ Ook heb ik het probleem van de eerste keer verbeterd (de h1 bleef zich herhalen)
 
   ### Je uitkomst - karakteristiek screenshots:
   Pagina 1:
-  <img src="readme-images/HelloFresh-mobile1.png" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/HelloFresh-desktop1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/HelloFresh-mobile1.png" width="150px" alt="uitomst opdracht 1">
+  <img src="readme-images/HelloFresh-desktop1.png" width="150px" alt="uitomst opdracht 1">
 
   Pagina 2: 
-  <img src="readme-images/HelloFresh-mobile2.png" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-images/HelloFresh-desktop2.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/HelloFresh-mobile2.png" width="150px" alt="uitomst opdracht 1">
+  <img src="readme-images/HelloFresh-desktop2.png" width="150px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -321,7 +321,7 @@ Na veel gedoe met de mediaquery is het mij ook gelukt om een desktop versie te m
 
   ### Dit was lastig/Is niet gelukt:
   De navigatie op desktop is jammergenoeg niet gelukt. Om deze reden heb ik de hamburger menu toegevoegd voor bij de desktop versie (de mediaquery die ik heb toegevoegd is (min 150em). 
-  <img src="readme-images/teleurgesteld-1.png" width="375px" alt="bummer">
+  <img src="readme-images/teleurgesteld-1.png" width="150px" alt="bummer">
 </details>
 
 
