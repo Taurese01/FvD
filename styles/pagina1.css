@@ -29,8 +29,8 @@ body {
 
 /* Section 1 regel 31 t/m 122 */
 section:nth-of-type(1) {
-  /* background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg"); */
-  background-image: url("/Users/taurese01/Desktop/hva/CMD2223/blok 2/frontend/basiswebsite/images/header2.webp");
+  background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg"); 
+  /* De afbeelding werkt niet op deze manier: background-image: url("/Users/taurese01/Desktop/hva/CMD2223/blok 2/frontend/basiswebsite/images/header2.webp"); */
   min-height: 25.625em;
   padding: 1.125em;
   background-size: cover;
@@ -530,8 +530,8 @@ section:nth-of-type(7) h4 {
 
 /* Section 8 regel 533 t/m 567 */
 section:nth-of-type(8) {
-  /* background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg"); */
-  background-image: url("/Users/taurese01/Desktop/hva/CMD2223/blok 2/frontend/basiswebsite/images/header2.webp");
+  background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg");
+  /* De afbeelding werkt niet op deze manier: background-image: url("/Users/taurese01/Desktop/hva/CMD2223/blok 2/frontend/basiswebsite/images/header2.webp"); */
   min-height: 25.625em;
   padding: 1.125em;
   background-size: cover;

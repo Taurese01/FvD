@@ -23,8 +23,8 @@
 
 /* Section 1 regel 24 t/m 60 */
 section:nth-of-type(1) {
-  /* background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_410,q_auto:eco,w_420/hellofresh_website/nl/cms/duurzaamheid/Durability_-_Mobile.png"); */
-  background-image: url("/Users/taurese01/Desktop/hva/CMD2223/blok 2/frontend/basiswebsite/images/page2-header.png");
+  background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_410,q_auto:eco,w_420/hellofresh_website/nl/cms/duurzaamheid/Durability_-_Mobile.png");
+  /* De afbeelding werkt niet op deze manier: background-image: url("/Users/taurese01/Desktop/hva/CMD2223/blok 2/frontend/basiswebsite/images/page2-header.png"); */
   min-height: 25.625em;
   padding: 1.125em;
   background-size: cover;
