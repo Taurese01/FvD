@@ -62,7 +62,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-Met een screenreader is de website goed te gebruiken je krijgt alle info goed mee. Alle tekst, navigatie, headers en titels worden goed uitgelegd. 
+Met een screenreader is de website goed te gebruiken je krijgt alle info goed mee. Alle tekst, navigatie, headers en titels worden goed uitgelegd. Alleen de h1 op de page werd niet goed uitgesproken en herhaalde zichzelf continu.
 
 
   #### Muis en Toetsenbord 
@@ -82,11 +82,14 @@ Ook is het lezen van de content op de pagina erg nog steeds erg goed te doen.
 
 Met spasmes of Parkinson’s is de website lastig te gebruiken, maar niet onmogelijk. Omdat de buttons erg groot zijn is het nog mogelijk om hier op te kunnen klikken.  Wel was het navigeren met spasmes erg moeilijk met een hand, maar met twee zou dit nog moeilijker zijn om te gebruiken. 
 
+<img src="readme-images/elastiek1.png">
+<img src="readme-images/arm.png">
+
 
   #### Concentratie problemen
 Concentratieprobleem
 Met concentratie problemen is deze website niet zo goed te gebruiken. Dit is omdat de website heel rustig is en geen aandacht trekt wanneer jij met iets andere bezig bent. Er zijn geen onderdelen op de pagina die erg uitspatten. 
-
+<img src="readme-images/ballon.png">
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
@@ -95,6 +98,8 @@ Voor mensen met kleurenblind word er best goed rekening gehouden, wanneer er met
 Behalve bij de Green-Week of Green-Blind, hierbij zie je geen verschil met de originele website. 
 
 Verder is met een visuele beperking de website nog redelijk goed te gebruiken, dit is omdat er heel veel afbeeldingen zijn op de pagina en dat er goed gebruik is gemaakt van flexbox, alle tekst is opgedeeld in verschillende stukken.
+
+<img src="readme-images/bril.png">
 
 </details>
 
@@ -188,16 +193,13 @@ Ik heb van de student assistentes een mogelijke oplossing meegekregen voor mijn 
   
   Taurese: Ik weet niet hoe ik meerdere dropdown UL's kan maken binnen een footer. 
   Brianne: Heeft het zelfde probleem als ik. 
+  Lars: had geen voortgang gemaakt en had niets op te vragen bij de les
   
   
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - hier na afloop snel de uitkomsten van de meeting vastleggen
+  Na afloop van het gesprek heb ik de footer kunnen toepassen binnen de website (deze hadden we gemaakt). Dit heeft mij erg opweg geholpen en hierdoor heb ik weer goed verder kunnen werken. 
 
 </details>
 
@@ -298,8 +300,9 @@ Met de screenreaders is de pagina erg goed te gebruiken. Dit is omdat ik op bijn
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. <a href="https://codepen.io/Taurese/pen/dyKmpqG">De carrousel voor section 3 van de homepage (van Sanne)</a>
+  2. <a href="https://codepen.io/Taurese/pen/PoaBYaj">De header die wij in de les hebben gemaakt (op mijn pagina heb ik hier veel veranderingen in gebracht</a>
+  3. <a href="https://codepen.io/Mrshcom/pen/DgWqxm">De autotype h1 van de homepage (deze heb ik gekregen van de student assistentes, zelf begrijp ik het niet helemaal (keyframes en -webkit)</a>
+  4. <a href="https://codepen.io/shooft/pen/zYamYyx">De footer die uitklapt (deze hebben Sanne, brianne en ik gemaakt tijdens het tweede feedbackgesprek.</a>
 
 </details>
