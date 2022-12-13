@@ -1,0 +1,690 @@
+
+/* Basis style elementen */
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+button,
+summary {
+	cursor: pointer;
+}
+
+html {
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: var(--general-background);
+	color: var(--general-color);
+}
+
+
+/* CUSTOM PROPERTIES kleuren die zijn toegepast binnen de website */
+
+:root {
+	--color-text: #111;
+	--color-background: #eee;
+	--general-color: #012;
+	--general-background: #fff;
+	--header-gradient: linear-gradient(#f8a, #fbd);
+	--menu-gradient: linear-gradient(#8af, #bdf);
+	--menu-border: #46f;
+	--button-color: #fff;
+	--button-background: #f46;
+	--title-gradient: linear-gradient(#f46 40%, #f8a 80%);
+	--header-background: rgb(255, 255, 255);
+	--header-boxshadow: rgb(0 0 0 / 15%);
+	--header-tekst: rgb(36, 36, 36);
+	--nav-boxshadow: rgb(0 0 0 / 15%);
+	--header-button: black;
+	--header-background-color: rgb(255, 255, 255);
+	--header—ul-li-border: solid black;
+	--header-nav-li: rgb(6, 122, 70);
+	--footer-bordertop: rgb(187, 187, 187);
+	--footer-borderbottom: rgb(187, 187, 187);
+	--footer-color: #067a46;
+	--footer-black: black;
+	--footer-section-color: rgb(6, 122, 70);
+	--footer-hover: #067A46;
+	--footer-a: #FFFFFF;
+}
+
+
+/* Header (gemaakt in de klas) regel 57 t/m 226 */
+nav {
+	box-shadow: var(--nav-boxshadow) 0em 0.125em 0.25em 0em;
+	position: sticky;
+}
+
+nav img {
+	width: 5.75em;
+	height: 1.875em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+header {
+	min-height: 4em;
+	padding: 0 1em;
+	background-color: var(--header-background-color);
+	line-height: 1;
+	box-shadow: var(--nav-boxshadow);
+	/* JOUW CODE HIER - stap 3 */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+/* alle links in de header */
+header a {
+	padding: .5em 0;
+	color: var(--general-color);
+	text-decoration: none;
+}
+
+
+/* LOGO */
+
+header>a:first-of-type {
+	/* om het boek en de titel te positioneren */
+	display: grid;
+	grid-template-columns: min-content min-content;
+	grid-gap: .25em;
+	align-items: center;
+	margin: auto;
+	font-weight: bold;
+}
+
+header>a:first-of-type img {
+	height: 1.875em;
+}
+
+
+/* header button  */
+header button {
+	padding: .5em;
+	display: flex;
+	align-items: center;
+	gap: .25em;
+	appearance: none;
+	background-color: var(--header-button);
+	border: none;
+	border-radius: .25em;
+	font: inherit;
+	text-align: center;
+	color: var(--button-color);
+}
+
+header button img {
+	height: 1em;
+}
+
+/* MENU BUTTON */
+header>button {
+	order: -1;
+}
+
+
+/* SLUIT BUTTON */
+nav button {
+	justify-self: start;
+}
+
+
+/* HET MENU */
+header>nav {
+	padding: 1em;
+	display: grid;
+	align-content: start;
+	gap: 1em;
+	background-color: var(--header-background-color);
+	box-shadow: var(--nav-boxshadow);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 15.625em;
+	transform: translatex(-100%);
+	transition: transform .3s;
+}
+
+/* als menu open is */
+nav.toonMenu {
+	transform: translatex(0);
+}
+
+
+/* LIJST MET LINKS */
+
+nav ul {
+	margin: 0;
+	padding: 0em;
+	list-style: none;
+}
+
+
+/* EEN LINK IN DE LIJST */
+header nav a {
+	display: flex;
+	align-items: center;
+	column-gap: .25em;
+	text-align: left;
+	padding: 1em;
+	background-color: var(--header-background-color);
+	color: var(--header-tekst);
+	display: flex;
+	cursor: pointer;
+	text-decoration: none;
+
+}
+
+header nav ul li a:hover {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	color: #067A46;
+	text-decoration: underline;
+	border: 0.0625em solid var(--header—ul-li-border);
+	border-radius: 0.25em
+}
+
+header nav li:nth-of-type(1) {
+	width: 100%;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	border-radius: 0.25em;
+	border-style: none;
+	font-size: 1em;
+	line-height: 0em;
+	padding: 0.3125em 1.5em;
+	background: none;
+	border-color: var(--footer-section-color);
+	box-shadow: 0em 0em 0em 0.0625em inset;
+	color: var(--footer-section-color);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav a img {
+	width: auto;
+	height: 2em;
+}
+
+nav a.active {
+	font-weight: bold;
+}
+
+
+
+/* Footer van de website gemaakt tijdens de voortgangsgesprekken met Sanne. Regel 231 t/m 576 */
+footer {
+	background: none;
+}
+
+footer section:nth-of-type(1) {
+	--uitklaptijd: .3s;
+	background: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	min-height: 0;
+	padding: 1.125em;
+	place-items: center;
+	place-content: center;
+	text-align: center;
+	flex-direction: row;
+	border-top: 0.0625em solid rgb(187, 187, 187);
+	padding: 0.3125em 1em 0.3125em 1em;
+}
+
+footer section:nth-of-type(2) {
+	--uitklaptijd: .3s;
+	background: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	min-height: 0;
+	padding: 1.125em;
+	place-items: center;
+	place-content: center;
+	text-align: center;
+	flex-direction: row;
+	border-top: 0.0625em solid var(--footer-bordertop);
+	padding: 0.3125em 1em 0.3125em 1em;
+}
+
+/* Footer link van section 2 */
+footer section:nth-of-type(2) a {
+	display: flex;
+	padding: 1em;
+	color: inherit;
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0;
+	font-size: 0.875em;
+	line-height: 1.25em;
+	color: var(--footer-color);
+	border-style: none;
+	border-width: 0;
+	text-decoration: underline;
+}
+
+
+/* Footer link van section 3 */
+footer section:nth-of-type(3) a {
+	display: flex;
+	padding: 1em;
+	color: inherit;
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0px;
+	font-size: 0.875em;
+	line-height: 1.25em;
+	color: var(--footer-color);
+	border-style: none;
+	border-width: 0;
+	text-decoration: underline;
+}
+
+/* Footer link van section 4 */
+footer section:nth-of-type(4) a {
+	display: flex;
+	padding: 1em;
+	color: inherit;
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0px;
+	font-size: 0.875em;
+	line-height: 1.25em;
+	color: var(--footer-color);
+	border-style: none;
+	border-width: 0;
+	text-decoration: underline;
+	background-color: none;
+}
+
+footer section:nth-of-type(3) {
+	--uitklaptijd: .3s;
+	background: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	min-height: 0;
+	padding: 1.125em;
+	place-items: center;
+	place-content: center;
+	text-align: center;
+	flex-direction: row;
+	border-top: 0.0625em solid var(--footer-bordertop);
+	padding: 0.3125em 1em 0.3125em 1em;
+}
+
+footer section:nth-of-type(4) {
+	--uitklaptijd: .3s;
+	background: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	min-height: 0;
+	padding: 1.125em;
+	place-items: center;
+	place-content: center;
+	text-align: center;
+	flex-direction: row;
+	border-top: 0.0625em solid var(--footer-bordertop);
+	padding: 0.3125em 1em 0.3125em 1em;
+	border-bottom: var(--footer-borderbottom);
+}
+
+/* Footer section titel 355 t/m 384 */
+footer section h3 {
+	flex-grow: 1;
+	margin: 0;
+	cursor: pointer;
+	font-size: 1.125em;
+	text-align: left;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em
+}
+
+footer section:nth-of-type(2) h3 {
+	flex-grow: 1;
+	margin: 0;
+	cursor: pointer;
+	font-size: 1.125em;
+	text-align: left;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+footer section:nth-of-type(4) h3 {
+	flex-grow: 1;
+	margin: 0;
+	cursor: pointer;
+	font-size: 1.125em;
+	text-align: left;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+/* Footer button */
+footer section button {
+	width: 1.875em;
+	height: 1.75em;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: thin;
+	color: var(--header-background-color);
+	background-color: var(--footer-section-color);
+	margin-left: auto;
+}
+
+/* Footer uitklap button */
+footer section button img {
+	transform: rotate(.25turn);
+	transition: var(--uitklaptijd);
+	width: 1em;
+	height: 1em;
+}
+
+/* Footer link hover 408 t/m 444 */
+
+footer section:nth-of-type(1) a:hover {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	color: var(--footer-hover);
+	text-decoration: underline;
+	border: 0.0625em solid var(--footer-black);
+	border-radius: 0.25em;
+}
+
+footer section:nth-of-type(2) a:hover {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	color: var(--footer-color);
+	text-decoration: underline;
+	border: 0.0625em solid var(--footer-black);
+	border-radius: 0.25em;
+	background-color: transparent;
+}
+
+footer section:nth-of-type(3) a:hover {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	color: var(--footer-color);
+	text-decoration: underline;
+	border: 0.0625em solid var(--footer-black);
+	border-radius: 0.25em;
+}
+
+footer section:nth-of-type(4) a:hover {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+	color: var(--footer-color);
+	text-decoration: underline;
+	border: 0.0625em solid var(--footer-black);
+	border-radius: 0.25em;
+	background-color: transparent;
+}
+
+
+
+footer section.open button img {
+	transform: rotate(-.25turn);
+}
+
+footer section ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-height: 0em;
+	overflow: hidden;
+}
+
+footer section.open ul {
+	max-height: 25em;
+	transition: var(--uitklaptijd);
+}
+
+
+footer section ul li a {
+	display: flex;
+	padding: 1em;
+	color: inherit;
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0px;
+	font-size: 0.875em;
+	line-height: 1.25em;
+	color: #067a46;
+}
+
+
+footer section:nth-of-type(1) ul li a {
+	display: flex;
+	padding: 1em;
+	color: inherit;
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0px;
+	font-size: 0.875em;
+	line-height: 1.25em;
+	color: var(--footer-color);
+}
+
+footer section:nth-of-type(1) a {
+	font-weight: 25em;
+	font-size: 1em;
+	border-radius: 0.1875em;
+	font-family: Agrandir, sans-serif;
+	background-color: #FFFFFF;
+	color: var(--footer-black);
+	text-decoration: underline;
+	text-align: center;
+	padding: 0.75em 2.25em;
+	box-shadow: none;
+
+}
+
+
+footer section:nth-of-type(4) ul li a {
+	display: flex;
+	padding: 1em;
+	color: inherit;
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+	margin: 0em;
+	font-size: 0.875em;
+	line-height: 1.25em;
+	border: none;
+	text-decoration: underline;
+	color: var(--footer-color);
+}
+
+footer section:nth-of-type(4) img {
+	justify-content: center;
+	margin: auto;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	width: 1em;
+	height: 1em;
+}
+
+footer section:nth-of-type(4) h3 {
+	font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+	/* background-color: red; */
+	flex-grow: 1;
+	margin: 0;
+	cursor: pointer;
+	padding-top: 0em;
+}
+
+footer section:nth-of-type(5) {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	justify-content: space-evenly;
+	padding: 1em 6.25em;
+}
+
+footer section:nth-of-type(5) img {
+	width: 1.5625em;
+	height: 1.5625em;
+}
+
+
+footer section:nth-of-type(6) {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+footer section:nth-of-type(6) ul {
+	overflow: auto;
+	padding-bottom: 0.9375em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 0.9375em;
+	gap: 0.9375em;
+
+}
+
+footer section:nth-of-type(6) li {
+	color: var(--footer-color);
+	text-decoration: underline;
+}
+
+
+footer section:nth-of-type(7) p {
+	padding-bottom: 0em;
+}
+
+footer section:nth-of-type(7) p {
+	text-align: center;
+	padding-bottom: 0em;
+	font-size: 1em;
+}
+
+/* Mediaquery, voor de tablet en desktop versie regel 578 t/m 689 */
+@media (min-width:32em) {
+	section button {
+		order: -100;
+	}
+}
+
+@media (min-width:50em) {
+	footer {
+		display: flex;
+		gap: 1em;
+		padding-top: 1em;
+		border-bottom: 0.0625em solid rgb(187, 187, 187);
+
+
+	}
+
+	footer section h3 {
+		cursor: unset;
+	}
+
+	footer section>button {
+		display: none;
+	}
+
+	footer section ul,
+	footer section.open ul {
+		max-height: unset;
+	}
+
+
+	footer section:nth-of-type(1) {
+		display: block;
+		border-top: none;
+	}
+
+	footer section:nth-of-type(2) {
+		display: block;
+		border-top: none;
+	}
+
+	footer section:nth-of-type(3) {
+		display: block;
+		border-top: none;
+	}
+
+	footer section:nth-of-type(4) {
+		display: block;
+		border-top: none;
+		border-bottom: none;
+		margin: 0;
+	}
+
+	footer section:nth-of-type(4) ul {
+		flex-direction: column;
+	}
+
+
+	footer section:nth-of-type(5) {
+		display: none;
+	}
+
+	footer section:nth-of-type(6) {
+		display: none;
+	}
+
+	footer section:nth-of-type(7) {
+		display: none;
+	}
+}
+
+
+@media (min-width:150em) {
+	header>button {
+		display: none;
+	}
+
+	nav {
+		position: static;
+		transform: none;
+		padding: 0;
+
+		background: none;
+	}
+
+	nav button {
+		display: none;
+	}
+
+	nav ul {
+		display: flex;
+		gap: 1em;
+	}
+
+	nav a {
+		flex-direction: column;
+
+		border: none;
+	}
+
+	header>a:last-of-type {
+		flex-direction: column;
+	}
+}
+
+@media (min-width:57em) {
+
+	header>a:last-of-type,
+	nav a {
+		flex-direction: row;
+	}
+}
+
