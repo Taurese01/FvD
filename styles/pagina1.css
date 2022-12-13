@@ -1,641 +1,642 @@
-
-/* alle kleuren naar die root veranderen en alle pixels in EM veranderen! */
-
-
-
-
-section:nth-of-type(1){
-    background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg");
-    min-height: 410px; /* bah px */
-    /* padding-bottom: 20px; */
-    /* padding-top: 20px; */
-    padding:1.125em;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    /* width: 100%; */
-    /* display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-    display:grid;
-    place-content: center;
-    place-items: center;
-    /* sanne vindt grid ok  - flex trouwens ook */
-    text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@keyframes typing { from { width: 0; } }
-@keyframes blink-caret { 50% { border-color: transparent; } }
-
-h1 { 
-	font: bold 100% Consolas, Monaco, monospace;
-	border-right: .1em solid black;
-  font-size: 32px;
-	width: 12.3ch;
-	margin: 0em;
-	white-space: nowrap;
-	overflow: hidden;
-	-webkit-animation: typing 7s steps(21, end),
-	blink-caret .5s step-end infinite alternate;
+:root {
+  --maxWidth: 32rem;
 }
 
-section:nth-of-type(1) a{
-    font-weight: 400px;
-    font-size: 16px;
-    border-radius: 3px;
-    font-family: Agrandir,sans-serif;
-    color: #FFFFFF; /* veranderen naar die root ding  */
-    background-color: #067A46;   /* veranderen naar die root ding  */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    text-decoration: none;
-    text-align: center;
-    padding: 12px 36px;
-    text-decoration: none;
+body {
+  grid-template-columns: minmax(auto, var(--maxWidth));
+  justify-content: center;
+}
+
+:root {
+  --tekst-zwart: black;
+  --kleur-wit: #FFFFFF;
+  --background-kleur-wit: #FFFFFF;
+  --kleur-groen: #676767;
+  --border-sections: #EEEEEE;
+  --a-background-color-versie1: #067A46;
+  --a-tekst-color-versie1: #067A46;
+  --a-border-color-versie1: #067A46;
+  --tekst-color-black-versie2: #242424;
+  --borderbottom: rgb(187, 187, 187);
+  --box-shadow-black: rgba(0, 0, 0, 0.2);
+}
+
+/* Section 1 regel 31 t/m 122 */
+section:nth-of-type(1) {
+  /* background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg"); */
+  background-image: url("/Users/taurese01/Desktop/hva/CMD2223/blok 2/frontend/basiswebsite/images/header2.webp");
+  min-height: 25.625em;
+  padding: 1.125em;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+}
+
+/* Opkomende tekst heb ik van codepen, deze is doorgeven door de student assistentes (deze code begrijp ik zelf niet. Regel 31 t/m 53*/
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h1 {
+  font: bold 100% Consolas, Monaco, monospace;
+  border-right: .1em solid var(--tekst-zwart);
+  font-size: 2em;
+  width: 12.3ch;
+  margin: 0em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 7s steps(21, end),
+    blink-caret .5s step-end infinite alternate;
+}
+
+section:nth-of-type(1) a {
+  font-weight: 25em;
+  font-size: 1em;
+  border-radius: 0.1875em;
+  font-family: Agrandir, sans-serif;
+  color: var(--kleur-wit);
+  background-color: var(--a-background-color-versie1);
+  box-shadow: 0em 0.5em 1em 1em var(--box-shadow-black);
+  text-decoration: none;
+  text-align: center;
+  padding: 0.75em 2.25em;
+  text-decoration: none;
 }
 
 section:nth-of-type(1) p {
-    color: inherit;
-    font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
-    margin: 0.3125em;
-    text-align: center;
-    font-size: 20px;
-    line-height: 32px;
+  color: inherit;
+  font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0.3125em;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 2em;
 }
 
-
+/* Section 2 regel 92 t/m 122 */
 section:nth-of-type(2) {
-padding-top: 20px;
-text-align: center;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column; 
-padding-bottom: 20px;
+  padding-top: 1.25em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1.25em;
 }
 
 section:nth-of-type(2) h3 {
-
-  font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
   font-weight: 600;
-  line-height: 24px;
-  letter-spacing: -0.3px;
-  color: #242424;
-  font-size: 18px;
+  font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+  line-height: 1.5em;
+  letter-spacing: -0.01875em;
+  color: var(--tekst-color-black-versie2);
+  font-size: 1.125em;
   text-align: center;
 }
 
 
 section:nth-of-type(2) p {
-  font-family: "Source Sans Pro","Trebuchet MS",Helvetica,sans-serif;
+  font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
   display: block;
   margin: auto;
-  line-height: 20px;
+  line-height: 1.25em;
   width: 100%;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 1.875em;
 }
 
+/* Section 4 regel 125 t/m 216 (section 3 is een carrousel waarbij de css een aantal regels eronder staat. */
 section:nth-of-type(4) {
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+
+section:nth-of-type(4) ul {
+  padding: 0;
+}
+
+section:nth-of-type(4) li {
+  list-style-type: none;
 }
 
 section:nth-of-type(4) img {
-  width: 375px;
-  height: 303px;
+  width: 23.4375em;
+  height: 18.9375em;
   justify-content: center;
   margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  display: flex;
 }
 
 section:nth-of-type(4) h3 {
-  font-family: "Source Sans Pro","Trebuchet MS",Helvetica,sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.3px;
-    font-size: 20px;
-    margin-bottom: 5px;
-    justify-content: center;
-    padding-top: 30px;
-    margin: auto;
+  font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: -0.3px;
+  font-size: 1.25em;
+  margin-bottom: 0.3125em;
+  justify-content: center;
+  padding-top: 1.875em;
+  margin: auto;
 }
 
 section:nth-of-type(4) h4 {
-  font-family: "Source Sans Pro","Trebuchet MS",Helvetica,sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.3px;
-    font-size: 16px;
-    margin-bottom: 5px;
-    margin: auto;
+  font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: -0.01875em;
+  font-size: 1.25em;
+  margin-bottom: 0.3125em;
+  margin: auto;
+  justify-content: center;
+  display: flex;
 }
 
 section:nth-of-type(4) p {
-    font-weight: 400;
-    line-height: 20px;
-    color: #242424;
-    display: block;
-    padding: 0 30px;
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
+  font-weight: 400;
+  line-height: 1.25em;
+  color: var(--tekst-color-black-versie2);
+  display: block;
+  padding: 0em 1.875em;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
 }
 
 section:nth-of-type(4) a {
-  color: #067A46;
-  /* display: inline-block; */
+  color: var(--a-tekst-color-versie1);
   display: table;
   vertical-align: text-bottom;
-  font-size: 16px;
-  padding-left: 24px;
-  padding-right: 24px;
-  min-height: 40px;
-  line-height: 40px;
+  font-size: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  min-height: 2.5em;
+  line-height: 2.5em;
   background-color: transparent;
   border-style: solid;
-  border-width: 1px;
-  border-color: #067A46;
+  border-width: 0.0625em;
+  border-color: var(--a-border-color-versie1);
   box-shadow: none;
-  border-radius: 4px;
+  border-radius: 0.25em;
   margin: auto;
   text-decoration: none;
 }
 
-section:nth-of-type(4) strong {
-  padding-top: 20px;
-  border-bottom: 1px solid #EEEEEE;
-  padding-bottom: 40px;
-  text-align: center;
-  background-color: #FFFFFF;
+section:nth-of-type(4) a:hover {
+  color: var(--kleur-wit);
+  background-color: var(--a-background-color-versie1);
 }
+
+section:nth-of-type(4) strong {
+  padding-top: 1.25em;
+  border-bottom: 0.0625em solid var(--border-sections);
+  padding-bottom: 2.5em;
+  text-align: center;
+  background-color: var(--background-kleur-wit);
+}
+
+
+/* Section 5 regel 220 t/m 240 */
 section:nth-of-type(5) {
-    background-color: #FFFFFF;
-    padding-bottom: 25px;
-} 
+  background-color: var(--background-kleur-wit);
+  padding-bottom: 1.5625em;
+}
 
 section:nth-of-type(5) h3 {
-
-font-family: Agrandir,sans-serif;
-font-weight: 600;
-line-height: 24px;
--webkit-letter-spacing: -0.3px;
--moz-letter-spacing: -0.3px;
--ms-letter-spacing: -0.3px;
-letter-spacing: -0.3px;
-color: #242424;
-font-size: 18px;
-text-align: center;
-font-size: 24px;
-padding: 30px 0 5px 0;
-
+  font-family: Agrandir, sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: var(--tekst-color-black-versie2);
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.875em 0em 0.3125em 0em;
 }
 
 section:nth-of-type(5) p {
-  color: #676767;
+  color: var(--kleur-groen);
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/********************/
-/* ALGEMENE STIJLEN */
-/********************/
-
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  :root {
-      --maxWidth:32rem;
-  }
-  
-  body {
-      grid-template-columns: minmax(auto, var(--maxWidth));
-      justify-content:center;
-  }
-  
-
-
-
-
-
-
-
-
-    
-  /******************************/
-  /* DE CAROCARROUSEL CONTAINER */
-  /******************************/
-  
-  .caroCarrousel {
-      /* basis waarden die door de hele carrousel gebruikt worden */
-      /* kun je zelf aanpassen */
-      --caroCarrouselMainColor:#333;
-    --caroCarrouselAccentColor:#1b75b3;
-      --caroCarrouselShadeColor:#ddd9;
-  
-    position: relative;
-      outline:none;
-      padding-bottom: 1em;
-      border-bottom: 1px solid #EEEEEE;
-      padding-bottom: 60px;
-     
-  }
-  
-  /* dark mode */
-  @media (prefers-color-scheme: dark) {
-    .caroCarrousel {
-      --caroCarrouselMainColor:#ccc;
-      --caroCarrouselShadeColor:#4449;
-    }
-  }
-  
-  
-  /************************************/
-  /* de carrousel elementen container */
-  .caroCarrousel > ul {
-    margin: 0; padding: 0;
-    list-style: none;
-      display: flex;
-      
-      /* handmatig scrollen is mogelijk */
-      overflow: hidden;
-      
-      /* snappen als er gescrolled wordt - andere helft bij li */
-    scroll-snap-type: inline mandatory;
-    
-    /* smooth als met js gescrolled wordt */
-      scroll-behavior: smooth;
-    
-    /* scrollbar zoveel mogelijk verbergen */
-    -webkit-overflow-scrolling: touch; /* voor iOS*/
-    -ms-overflow-style: none; /* voor IE */
-      scrollbar-width: none; /* voor firefox */
-  }
-  
-  .caroCarrousel > ul::-webkit-scrollbar {
-    /* scrollbar zoveel mogelijk verbergen */
-    display: none; /* voor chrome, safari en edge*/
-  }
-  
-  
-  /**************************/
-  /* de carrousel elementen */
-  .caroCarrousel > ul li {
-    flex-basis: 85%;
-    flex-shrink: 0;
-    /* snappen als er gescrolled wordt - andere helft bij ul */
-      scroll-snap-align:center;
-  }
-  
-  
-  /**********************************/
-  /* de carrousel elementen content */
-  
-  /* de stijlen voor jouw content hier */
-  .caroCarrousel > ul li > img {
-    display: block;
-    width: 324px;
-    height: 405px;
-    max-width: 100%;
-    object-fit: cover;
-    margin: auto;
-  }
-  
-  .caroCarrousel > ul li > p {
-    font-weight: 400;
-    line-height: 20px;
-    color: #242424;
-    font-size: 14px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: block;
-    padding: 0 30px;
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
 }
 
-  .caroCarrousel > ul li > h4 {
-    font-family: Agrandir,sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.3px;
-    color: #242424;
-    font-size: 16px;
-    margin-bottom: 5px;
-    text-align: center;
-  }
-  
-  /****************/
-  /* DE BOLLETJES */
-  /****************/
-  
-  /* de bolletjes container */
-  .caroCarrousel nav ul {
-    position: absolute;
-      left: 2em; right: 2em;
-      margin: 0;
-    padding: 0 0 .5em;
-    list-style: none;
-      
-      display: flex;
-  /* 	flex-wrap:wrap; */
-    justify-content: center;
-    gap:.4em;
-  }
-  
-  /* een bolletje container */
-  .caroCarrousel > nav li {
-      flex-basis: 1.2em;
-      aspect-ratio: 1/1;
-  }
-  
-  /* de bolletjes */
-  .caroCarrousel > nav a {
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 50%;
-    border: 0;
-    background-color: #FFFFFF;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #067A46;
-  }
-  
-  .caroCarrousel > nav a:hover,
-  .caroCarrousel > nav a:focus {
-    color: var(--caroCarrouselAccentColor);
-  }
-  
-  .caroCarrousel > nav a.current {
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 50%;
-    border: 0;
-    background-color: #067A46;
-    width: 10px;
-    height: 10px;
-    background-color: #067A46;
-    border: 1px solid #067A46;
-  }
 
+/* Section 3 (de carrousel, deze heb ik gekregen van sanne. De code begrijp ik niet helemaal) regel 244 t/m 385 */
+.caroCarrousel {
+  --caroCarrouselMainColor: #333;
+  --caroCarrouselAccentColor: #1b75b3;
+  --caroCarrouselShadeColor: #ddd9;
 
-  .caroCarrousel > ul li > h3 {
-    font-family: Agrandir,sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.3px;
-    color: #242424;
-    font-size: 16px;
-    margin-bottom: 5px;
-    text-align: center;
-  }
-
-
-/* .Carrousel2{
-
-  overflow: hidden;
-  touch-action: pan-y;
   position: relative;
-  overflow-x: scroll;
-  -webkit-scrollbar-width: none;
-  -moz-scrollbar-width: none;
-  -ms-scrollbar-width: none;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  padding: 22px 0;
-  margin: 0;
-} */
-
-/* position: absolute;
-    width: 262px;
-    height: 315px;
-    border-radius: 5px;
-    background-image: linear-gradient(0deg,rgba(0,0,0,0) 45%,black);
-    box-shadow: rgb(228 228 228) 0px 3px 3px;
-    z-index: 1;
-} */
-
-
-/* Carrousel 2 */
-
-
-main section:nth-of-type(6) {
-  /* basis waarden die door de hele carrousel gebruikt worden */
-  /* kun je zelf aanpassen */
-  --caroCarrouselMainColor:#333;
---caroCarrouselAccentColor:#1b75b3;
-  --caroCarrouselShadeColor:#ddd9;
-
-position: relative;
-  outline:none;
+  outline: none;
   padding-bottom: 1em;
-  border-bottom: 1px solid #EEEEEE;
-  padding-bottom: 40px;
-  background-color: #FFFFFF;
- 
-}
+  border-bottom: 0.0625em solid var(--border-sections);
+  ;
+  padding-bottom: 3.75em;
 
-  
-section:nth-of-type(6) {
-  border-bottom: 1px solid #EEEEEE;
-} 
-
-section:nth-of-type(6) a{
-color: #067A46;
-/* display: inline-block; */
-display: table;
-vertical-align: text-bottom;
-font-size: 16px;
-padding-left: 24px;
-padding-right: 24px;
-min-height: 40px;
-line-height: 40px;
-background-color: transparent;
-border-style: solid;
-border-width: 1px;
-border-color: #067A46;
-box-shadow: none;
-border-radius: 4px;
-margin: auto;
-text-decoration: none;
 }
 
 /* dark mode */
 @media (prefers-color-scheme: dark) {
-.caroCarrousel2 {
-  --caroCarrouselMainColor:#ccc;
-  --caroCarrouselShadeColor:#4449;
+  .caroCarrousel {
+    --caroCarrouselMainColor: #ccc;
+    --caroCarrouselShadeColor: #4449;
+  }
 }
+
+/* de carrousel elementen container */
+.caroCarrousel>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: inline mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.caroCarrousel>ul::-webkit-scrollbar {
+  display: none;
 }
 
 
-/************************************/
+/* de carrousel elementen */
+.caroCarrousel>ul li {
+  flex-basis: 85%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+
+/* de carrousel elementen content */
+.caroCarrousel>ul li>img {
+  display: block;
+  width: 20.25em;
+  height: 25.3125em;
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.caroCarrousel>ul li>p {
+  font-weight: 400;
+  line-height: 1.25em;
+  color: var(--tekst-color-black-versie2);
+  font-size: 0.875em;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  padding: 0em 1.875em;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+}
+
+.caroCarrousel>ul li>h4 {
+  font-family: Agrandir, sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: -0.01875em;
+  color: var(--tekst-color-black-versie2);
+  font-size: 1em;
+  margin-bottom: 0.3125em;
+  text-align: center;
+}
+
+/* de bolletjes container */
+.caroCarrousel nav ul {
+  position: absolute;
+  left: 2em;
+  right: 2em;
+  margin: 0;
+  padding: 0 0 .5em;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  gap: .4em;
+}
+
+.caroCarrousel>nav li {
+  flex-basis: 1.2em;
+  aspect-ratio: 1/1;
+}
+
+/* de bolletjes */
+.caroCarrousel>nav a {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--background-kleur-wit);
+  width: 0.625em;
+  height: 0.625em;
+  border: 0.0625em solid var(--a-border-color-versie1);
+}
+
+.caroCarrousel>nav a:hover,
+.caroCarrousel>nav a:focus {
+  color: var(--caroCarrouselAccentColor);
+}
+
+.caroCarrousel>nav a.current {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--a-background-color-versie1);
+  width: 0.625em;
+  height: 0.625em;
+  border: 0.225em solid var(--a-border-color-versie1);
+}
+
+.caroCarrousel>ul li>h3 {
+  font-family: Agrandir, sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: -0.01875em;
+  color: var(--tekst-color-black-versie2);
+  font-size: 1em;
+  margin-bottom: 0.3125em;
+  text-align: center;
+}
+
+
+/* Carrousel 2 */
+/* Section 6 regel 391 t/m 502 */
+
+main section:nth-of-type(6) {
+  --caroCarrouselMainColor: #333;
+  --caroCarrouselAccentColor: #1b75b3;
+  --caroCarrouselShadeColor: #ddd9;
+
+  position: relative;
+  outline: none;
+  padding-bottom: 1em;
+  border-bottom: 0.0625em solid #EEEEEE;
+  padding-bottom: 2.5em;
+  background-color: #FFFFFF;
+}
+
+section:nth-of-type(6) {
+  border-bottom: 0.0625em solid #EEEEEE;
+}
+
+section:nth-of-type(6) a {
+  color: #067A46;
+  display: table;
+  vertical-align: text-bottom;
+  font-size: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  min-height: 2.5em;
+  line-height: 2.5em;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0.0625em;
+  border-color: #067A46;
+  box-shadow: none;
+  border-radius: 0.25em;
+  margin: auto;
+  text-decoration: none;
+}
+
+section:nth-of-type(6) a:hover {
+  color: #FFFFFF;
+  background-color: #067A46;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  .caroCarrousel2 {
+    --caroCarrouselMainColor: #ccc;
+    --caroCarrouselShadeColor: #4449;
+  }
+}
+
 /* de carrousel elementen container */
 main section:nth-of-type(6) ul {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  gap:1em;
-  padding:0 1.25em;
-  padding-bottom: 40px;
-  /* handmatig scrollen is mogelijk */
+  gap: 1em;
+  padding: 0em 1.25em;
+  padding-bottom: 2.5em;
   overflow: auto;
-  
-  /* snappen als er gescrolled wordt - andere helft bij li */
-scroll-snap-type: inline mandatory;
-
-/* smooth als met js gescrolled wordt */
+  scroll-snap-type: inline mandatory;
   scroll-behavior: smooth;
-
-/* scrollbar zoveel mogelijk verbergen */
--webkit-overflow-scrolling: touch; /* voor iOS*/
--ms-overflow-style: none; /* voor IE */
-  scrollbar-width: none; /* voor firefox */
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 main section:nth-of-type(6) ul::-webkit-scrollbar {
-/* scrollbar zoveel mogelijk verbergen */
-display: none; /* voor chrome, safari en edge*/
+  display: none;
 }
 
-
-/**************************/
 /* de carrousel elementen */
 main section:nth-of-type(6) ul li {
-flex-basis: 70%;
-flex-shrink: 0;
-/* snappen als er gescrolled wordt - andere helft bij ul */
-  scroll-snap-align:center;
+  flex-basis: 70%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
   position: relative;
 }
 
-
-/**********************************/
-/* de carrousel elementen content */
-
-
 main section:nth-of-type(6) ul li h3 {
-  position:absolute;
-  left:0;
-  right:0;
-  top:0;
-  margin:0;
-  min-height:10em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  min-height: 10em;
   background-image: linear-gradient(#000c, #0000);
-  color:white;
-  padding:1em; 
-  border-radius:5px 5px 0 0;
+  color: white;
+  padding: 1em;
+  border-radius: 0.3125em 0.3125em 0em 0em;
 }
 
 main section:nth-of-type(6) ul li p {
   color: #FFFFFF;
-  font-family: Agrandir,Verdana,Geneva,sans-serif;
-  line-height: 24px;
-  margin-bottom: 8px;
+  font-family: Agrandir, Verdana, Geneva, sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
   max-width: 80%;
   position: absolute;
-  top: 30px;
-  left: 18px;
+  top: 1.875em;
+  left: 1.125em;
 }
 
 /* de stijlen voor jouw content hier */
-main section:nth-of-type(6) ul li > img {
-display: block;
-width: 100%;
-object-fit: cover;
-border-radius: 5px;
-margin: auto;
-box-shadow: rgb(228 228 228) 0px 3px 3px;
-height: 315px;
+main section:nth-of-type(6) ul li>img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.3125em;
+  margin: auto;
+  box-shadow: rgb(228 228 228) 0px 3px 3px;
+  height: 19.6875em;
 }
 
-
+/* Section 7 regel 505 t/m 530 */
 section:nth-of-type(7) {
   max-width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.625em;
+  padding-right: 0.625em;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 1.25em;
 }
 
-section:nth-of-type(7) h4{
-  font-family: Agrandir,sans-serif;
+section:nth-of-type(7) li {
+  list-style-type: none;
+}
+
+section:nth-of-type(7) ul {
+  padding: 0;
+}
+
+section:nth-of-type(7) h4 {
+  font-family: Agrandir, sans-serif;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75em;
   color: #242424;
-  font-size: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 10px;
+  font-size: 1.25em;
+  margin-left: 0.3125em;
+  margin-right: 0.3125em;
+  margin-bottom: 0.625em;
 }
 
-
-section:nth-of-type(8){
-    background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg");
-    min-height: 410px; /* bah px */
-    /* padding-bottom: 20px; */
-    /* padding-top: 20px; */
-    padding:1.125em;
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    /* width: 100%; */
-    /* display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
-    display:grid;
-    place-content: center;
-    place-items: center;
-    /* sanne vindt grid ok  - flex trouwens ook */
-    text-align: center;
+/* Section 8 regel 533 t/m 567 */
+section:nth-of-type(8) {
+  /* background-image: url("https://img.hellofresh.com/c_fill,f_auto,fl_lossy,h_820,q_auto:eco,w_840/hellofresh_website/gb/cms/homepage/HF_App_web_landing_page_newbanners_desktop_767x410.jpg"); */
+  background-image: url("/Users/taurese01/Desktop/hva/CMD2223/blok 2/frontend/basiswebsite/images/header2.webp");
+  min-height: 25.625em;
+  padding: 1.125em;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
 }
 
-section:nth-of-type(8) a{
-  font-weight: 400px;
-  font-size: 16px;
-  border-radius: 3px;
-  font-family: Agrandir,sans-serif;
-  color: #FFFFFF; /* veranderen naar die root ding  */
-  background-color: #067A46;   /* veranderen naar die root ding  */
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+section:nth-of-type(8) a {
+  font-weight: 25em;
+  font-size: 1em;
+  border-radius: 0.1875em;
+  font-family: Agrandir, sans-serif;
+  color: var(--kleur-wit);
+  background-color: var(--a-background-color-versie1);
+  ;
+  box-shadow: 0em 0.5em 1em 0em var(--box-shadow-black);
   text-decoration: none;
   text-align: center;
-  padding: 12px 36px;
+  padding: 0.75em 2.25em;
 }
 
 section:nth-of-type(8) p {
   color: inherit;
   font-family: "Source Sans Pro", "Trebuchet MS", Helvetica, sans-serif;
-  margin: 0px;
+  margin: 0em;
   text-align: center;
-  font-size: 17px;
-  line-height: 32px;
-  padding-bottom: 20px;
+  font-size: 1.0625em;
+  line-height: 2em;
+  padding-bottom: 1.25em;
 }
 
-/* footer{
+/* Mediaquery, voor de tablet en desktop versie regel 570 t/m 643 */
+@media (min-width: 55em) {
 
+  .caroCarrousel>ul li>img {
+    display: block;
+    width: 15.625em;
+    height: 18.75em;
+    max-width: 100%;
+    object-fit: cover;
+    margin: auto;
+  }
 
-} */
+  .caroCarrousel>ul li {
+    flex-basis: 20%;
+  }
+
+  .caroCarrousel ul {
+    justify-content: center;
+    margin: auto;
+  }
+
+  .caroCarrousel nav ul {
+    display: none;
+  }
+
+  section:nth-of-type(4) li {
+    list-style-type: none;
+    flex-basis: 20%;
+  }
+
+  section:nth-of-type(4) ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+  }
+
+  section:nth-of-type(4) img {
+    width: 15.625em;
+    height: 17.1875em;
+  }
+
+  main section:nth-of-type(6) ul {
+    justify-content: center;
+  }
+
+  main section:nth-of-type(6) ul li {
+    flex-basis: 20%;
+  }
+
+  section:nth-of-type(7) ul {
+    padding: 0;
+    display: flex;
+  }
+
+  section:nth-of-type(7) {
+    max-width: 80%;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+    text-align: center;
+    padding-bottom: 1.25em;
+    justify-content: center;
+    margin: auto;
+  }
+
+  section:nth-of-type(8) {
+    border-bottom: 0.0625em solid var(--borderbottom);
+
+  }
+
+  section:nth-of-type(8) p {
+    width: 40%;
+  }
+
+}
