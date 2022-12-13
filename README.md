@@ -82,14 +82,15 @@ Ook is het lezen van de content op de pagina erg nog steeds erg goed te doen.
 
 Met spasmes of Parkinson’s is de website lastig te gebruiken, maar niet onmogelijk. Omdat de buttons erg groot zijn is het nog mogelijk om hier op te kunnen klikken.  Wel was het navigeren met spasmes erg moeilijk met een hand, maar met twee zou dit nog moeilijker zijn om te gebruiken. 
 
-<img src="readme-images/elastiekje1.png">
-<img src="readme-images/arm.png">
+<img src="readme-images/elastiekje1.png" width="375px" alt="omschrijving van de test" >
+<img src="readme-images/arm.png" width="375px" alt="omschrijving van de test" >
 
 
   #### Concentratie problemen
 Concentratieprobleem
 Met concentratie problemen is deze website niet zo goed te gebruiken. Dit is omdat de website heel rustig is en geen aandacht trekt wanneer jij met iets andere bezig bent. Er zijn geen onderdelen op de pagina die erg uitspatten. 
-<img src="readme-images/ballon.png">
+<img src="readme-images/ballon.png" width="375px" alt="omschrijving van de test" >
+
 
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
@@ -99,7 +100,7 @@ Behalve bij de Green-Week of Green-Blind, hierbij zie je geen verschil met de or
 
 Verder is met een visuele beperking de website nog redelijk goed te gebruiken, dit is omdat er heel veel afbeeldingen zijn op de pagina en dat er goed gebruik is gemaakt van flexbox, alle tekst is opgedeeld in verschillende stukken.
 
-<img src="readme-images/bril.png">
+<img src="readme-images/bril.png" width="375px" alt="omschrijving van de test">
 
 </details>
 
