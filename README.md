@@ -290,11 +290,14 @@ Ook heb ik het probleem van de eerste keer verbeterd (de h1 bleef zich herhalen)
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  Pagina 1:
+  ### Pagina 1:
   <img src="readme-images/HelloFresh-mobile1.png" width="150px" alt="uitomst opdracht 1">
   <img src="readme-images/HelloFresh-desktop1.png" width="150px" alt="uitomst opdracht 1">
 
-  Pagina 2: 
+
+
+
+  ### Pagina 2:
   <img src="readme-images/HelloFresh-mobile2.png" width="150px" alt="uitomst opdracht 1">
   <img src="readme-images/HelloFresh-desktop2.png" width="150px" alt="uitomst opdracht 1">
 
@@ -302,15 +305,25 @@ Ook heb ik het probleem van de eerste keer verbeterd (de h1 bleef zich herhalen)
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
+
+
+
 <strong>Header en footer</strong>
 Ik vind dat de header en footer er erg goed uitzien. Ik heb veel aanpassingen hieraan gedaan en ben erg trots op het eindresultaat.
   <img src="readme-images/trots-2.png" width="150px" alt="top">
   <img src="readme-images/trots-3.png" width="150px" alt="top">
 
 
+
+
+
 <strong>De mobile versie</strong>
 Ik heb hard aan de website gewerkt en heel veel uren hierin gestopt en ben erg trots op het eindresultaat (deze is bijna identiek aan de officiele hello fresh website).
 <img src="readme-images/trots-1.png" width="150px" alt="top">
+
+
+
+
 
 
 <strong>Desktop versie</strong>
@@ -323,6 +336,10 @@ Na veel gedoe met de mediaquery is het mij ook gelukt om een desktop versie te m
   De navigatie op desktop is jammergenoeg niet gelukt. Om deze reden heb ik de hamburger menu toegevoegd voor bij de desktop versie (de mediaquery die ik heb toegevoegd is (min 150em). 
   <img src="readme-images/teleurgesteld-1.png" width="150px" alt="bummer">
 </details>
+
+
+
+
 
 
 
