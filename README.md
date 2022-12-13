@@ -82,7 +82,7 @@ Ook is het lezen van de content op de pagina erg nog steeds erg goed te doen.
 
 Met spasmes of Parkinson’s is de website lastig te gebruiken, maar niet onmogelijk. Omdat de buttons erg groot zijn is het nog mogelijk om hier op te kunnen klikken.  Wel was het navigeren met spasmes erg moeilijk met een hand, maar met twee zou dit nog moeilijker zijn om te gebruiken. 
 
-<img src="readme-images/elastiek1.png">
+<img src="readme-images/elastiekje1.png">
 <img src="readme-images/arm.png">
 
 
