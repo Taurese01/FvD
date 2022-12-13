@@ -310,6 +310,8 @@ Ook heb ik het probleem van de eerste keer verbeterd (de h1 bleef zich herhalen)
 
 <strong>Header en footer</strong>
 Ik vind dat de header en footer er erg goed uitzien. Ik heb veel aanpassingen hieraan gedaan en ben erg trots op het eindresultaat.
+
+
   <img src="readme-images/trots-2.png" width="150px" alt="top">
   <img src="readme-images/trots-3.png" width="150px" alt="top">
 
@@ -319,6 +321,8 @@ Ik vind dat de header en footer er erg goed uitzien. Ik heb veel aanpassingen hi
 
 <strong>De mobile versie</strong>
 Ik heb hard aan de website gewerkt en heel veel uren hierin gestopt en ben erg trots op het eindresultaat (deze is bijna identiek aan de officiele hello fresh website).
+
+
 <img src="readme-images/trots-1.png" width="150px" alt="top">
 
 
@@ -328,12 +332,16 @@ Ik heb hard aan de website gewerkt en heel veel uren hierin gestopt en ben erg t
 
 <strong>Desktop versie</strong>
 Na veel gedoe met de mediaquery is het mij ook gelukt om een desktop versie te maken voor beide pagina's, deze zijn erg goed gelukt en hier ben ik persoonlijk erg trots op!
+
+
   <img src="readme-images/trots-4.png" width="150px" alt="top">
   <img src="readme-images/trots-5.png" width="150px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   De navigatie op desktop is jammergenoeg niet gelukt. Om deze reden heb ik de hamburger menu toegevoegd voor bij de desktop versie (de mediaquery die ik heb toegevoegd is (min 150em). 
+
+  
   <img src="readme-images/teleurgesteld-1.png" width="150px" alt="bummer">
 </details>
 
