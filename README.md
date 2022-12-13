@@ -89,6 +89,8 @@ Met spasmes of Parkinson’s is de website lastig te gebruiken, maar niet onmoge
   #### Concentratie problemen
 Concentratieprobleem
 Met concentratie problemen is deze website niet zo goed te gebruiken. Dit is omdat de website heel rustig is en geen aandacht trekt wanneer jij met iets andere bezig bent. Er zijn geen onderdelen op de pagina die erg uitspatten. 
+
+
 <img src="readme-images/ballon.png" width="375px" alt="omschrijving van de test" >
 
 
@@ -193,7 +195,11 @@ Ik heb van de student assistentes een mogelijke oplossing meegekregen voor mijn 
   De agenda bewerken gaat erg lastig dus ik zet alle dingen hier neer:
   
   Taurese: Ik weet niet hoe ik meerdere dropdown UL's kan maken binnen een footer. 
+
+
   Brianne: Heeft het zelfde probleem als ik. 
+
+
   Lars: had geen voortgang gemaakt en had niets op te vragen bij de les
   
   
@@ -227,8 +233,13 @@ Met concentratie problemen is de website nog redelijk te gebruiken. Dit is weder
 #### Spasmes/Parkinson
 Met parkinsons is de website goed te gebruiken. Dit is omdat de website veel informatie en afbeeldingen heeft en niet veel dingen waar je hoeft te klikken. 
 
+<img src="readme-images/parkinsons2.jpeg" width="375px" alt="omschrijving van de test">
+
+
+
 #### Screenreaders
 Met de screenreaders is de pagina erg goed te gebruiken. Dit is omdat ik op bijna alle elementen een aria-label heb toegevoegd die uitlegt wat de content inhoud (sections, kopjes, woorden, afbeeldingen, buttons, links).
+Ook heb ik het probleem van de eerste keer verbeterd (de h1 bleef zich herhalen).
 
   </details>
 
@@ -254,14 +265,18 @@ Met de screenreaders is de pagina erg goed te gebruiken. Dit is omdat ik op bijn
   ### Agenda meeting
   
   Taurese: Ik weet niet hoe ik de header die we in de les hebben gemaakt er goed uit kan laten zien op de desktop versie. En dat mijn navigatie voor een of andere reden niet opent op mijn tweede pagina desondanks de code precies hetzelfde is (css & javascript).
+
+  Brianne: Ik heb “ik wil graag weten hoe ik iconen (images) verander als de grootte van mijn scherm verandert met JavaScript en Css, en of het semantisch correct is om meerdere p’s onder elkaar te hebben of dat daar een andere mogelijkheid voor is. Als laatste wil ik mijn foto’s en tekstgroottes responsive maken.”
+
+  Lars: Ik heb “ik wil graag weten hoe ik iconen (images) verander als de grootte van mijn scherm verandert met JavaScript en Css, en of het semantisch correct is om meerdere p’s onder elkaar te hebben of dat daar een andere mogelijkheid voor is. Als laatste wil ik mijn foto’s en tekstgroottes responsive maken.”
+
+
   
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Het javascript probleem is gelukkig opgelost! ik kan nu mijn pagina volledig afmaken. 
+  - Jammergenoeg is het probleem met de header niet goed gelukt, hierom heb ik nu de mediaquerry aangepast waardoor je tot 150em een dropdown menu ziet. 
 
 </details>
 
@@ -275,19 +290,38 @@ Met de screenreaders is de pagina erg goed te gebruiken. Dit is omdat ik op bijn
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Pagina 1:
+  <img src="readme-images/HelloFresh-mobile1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/HelloFresh-desktop1.png" width="375px" alt="uitomst opdracht 1">
+
+  Pagina 2: 
+  <img src="readme-images/HelloFresh-mobile2.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/HelloFresh-desktop2.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+<strong>Header en footer</strong>
+Ik vind dat de header en footer er erg goed uitzien. Ik heb veel aanpassingen hieraan gedaan en ben erg trots op het eindresultaat.
+  <img src="readme-images/trots-2.png" width="150px" alt="top">
+  <img src="readme-images/trots-3.png" width="150px" alt="top">
+
+
+<strong>De mobile versie</strong>
+Ik heb hard aan de website gewerkt en heel veel uren hierin gestopt en ben erg trots op het eindresultaat (deze is bijna identiek aan de officiele hello fresh website).
+<img src="readme-images/trots-1.png" width="150px" alt="top">
+
+
+<strong>Desktop versie</strong>
+Na veel gedoe met de mediaquery is het mij ook gelukt om een desktop versie te maken voor beide pagina's, deze zijn erg goed gelukt en hier ben ik persoonlijk erg trots op!
+  <img src="readme-images/trots-4.png" width="150px" alt="top">
+  <img src="readme-images/trots-5.png" width="150px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  De navigatie op desktop is jammergenoeg niet gelukt. Om deze reden heb ik de hamburger menu toegevoegd voor bij de desktop versie (de mediaquery die ik heb toegevoegd is (min 150em). 
+  <img src="readme-images/teleurgesteld-1.png" width="375px" alt="bummer">
 </details>
 
 
